@@ -1,13 +1,8 @@
-[
-    {
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "app.2key.name",
-        "sha256_cert_fingerprints": [
-          "YOUR_SHA256_CERT_FINGERPRINT"
-        ]
-      }
-    }
-  ]
-  
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.lms_client",
+    "sha256_cert_fingerprints": ["D2:B8:07:55:86:18:68:16:BC:87:03:2F:38:48:38:4B:A5:17:77:4E"]
+  }
+}]
