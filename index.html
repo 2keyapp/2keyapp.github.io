@@ -1,8 +1,33 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open in Desktop App</title>
+</head>
+<body>
+    <p>Click the button below to open the desktop app:</p>
+    <a href="myapp://open" id="openAppLink">Open App</a>
+
+    <script>
+        function openDesktopApp() {
+            window.location.href = "myapp://open";
+            setTimeout(() => {
+                // Fallback: Redirect to download page if the app isn't installed
+                window.location.href = "https://www.2key.app/download";
+            }, 2000);
+        }
+
+        // Auto-trigger for direct page load
+        openDesktopApp();
+    </script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
   </head>
   <body>
     <p>coming soon.</p>
   </body>
-</html>
+</html> -->
