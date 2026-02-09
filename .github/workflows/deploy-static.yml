@@ -70,21 +70,18 @@ jobs:
           # Add all files
           git add -A
           
-          # Commit
-          git commit -m "Deploy static site - $(date +%Y-%m-%d-%H%M%S)" || exit 0
+          # Commit with unique message to force update
+          git commit -m "Deploy: $(date +%Y-%m-%d-%H%M%S) - Force rebuild" || exit 0
           
           # Configure remote URL with token
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           
           # Push to static branch
           git push origin static --force
-          
-          # Create an empty commit to trigger Pages rebuild
-          git commit --allow-empty -m "Trigger Pages rebuild - $(date +%Y-%m-%d-%H%M%S)" || true
-          git push origin static || true
-          
+      
       - name: Verify deployment
         run: |
-          echo "Deployment complete! Files should be in the static branch."
-          echo "Check: https://github.com/${{ github.repository }}/tree/static"
-          echo "GitHub Pages should rebuild automatically. Wait 2-3 minutes."
+          echo "✅ Deployment complete!"
+          echo "📁 Files are in the static branch: https://github.com/${{ github.repository }}/tree/static"
+          echo "⏳ GitHub Pages will rebuild in 2-5 minutes"
+          echo "🌐 Site URL: https://2keyapp.github.io/"
