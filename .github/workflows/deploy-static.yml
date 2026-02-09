@@ -1,0 +1,57 @@
+name: Deploy Static Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build static site
+        run: npm run build
+      
+      - name: Deploy to static branch
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          
+          # Checkout static branch or create it
+          git checkout static 2>/dev/null || git checkout -b static
+          
+          # Remove all files except .git
+          git rm -rf . --ignore-unmatch || true
+          find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'out' -exec rm -rf {} + || true
+          
+          # Copy contents of out/ to root
+          cp -r out/* .
+          cp out/.nojekyll . 2>/dev/null || touch .nojekyll
+          
+          # Add all files
+          git add -A
+          
+          # Commit
+          git commit -m "Deploy static site - $(date +%Y-%m-%d)" || exit 0
+          
+          # Push to static branch
+          git push origin static --force
