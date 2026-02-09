@@ -36,16 +36,27 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           
-          # Checkout static branch or create it
-          git checkout static 2>/dev/null || git checkout -b static
+          # Fetch all branches
+          git fetch origin
           
-          # Remove all files except .git
-          git rm -rf . --ignore-unmatch || true
-          find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'out' -exec rm -rf {} + || true
+          # Checkout static branch or create it
+          if git show-ref --verify --quiet refs/remotes/origin/static; then
+            git checkout -b static origin/static
+          else
+            git checkout --orphan static
+            git rm -rf . 2>/dev/null || true
+          fi
+          
+          # Remove all files except .git and out
+          find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'out' -exec rm -rf {} + 2>/dev/null || true
           
           # Copy contents of out/ to root
           cp -r out/* .
-          cp out/.nojekyll . 2>/dev/null || touch .nojekyll
+          if [ -f out/.nojekyll ]; then
+            cp out/.nojekyll .
+          else
+            touch .nojekyll
+          fi
           
           # Add all files
           git add -A
@@ -53,5 +64,5 @@ jobs:
           # Commit
           git commit -m "Deploy static site - $(date +%Y-%m-%d)" || exit 0
           
-          # Push to static branch
+          # Push to static branch (token is automatically available from checkout action)
           git push origin static --force
