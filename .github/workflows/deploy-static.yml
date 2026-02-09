@@ -38,6 +38,13 @@ jobs:
       - name: Build static site
         run: npm run build
       
+      - name: Verify build output
+        run: |
+          echo "Checking build output..."
+          ls -la out/ || echo "ERROR: out/ directory not found!"
+          ls -la out/*.html | head -5 || echo "No HTML files found!"
+          echo "Build verification complete."
+      
       - name: Deploy to static branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -60,15 +67,33 @@ jobs:
           find . -maxdepth 1 ! -name '.' ! -name '.git' ! -name 'out' -exec rm -rf {} + 2>/dev/null || true
           
           # Copy contents of out/ to root
-          cp -r out/* .
+          echo "Copying files from out/ to root..."
+          cp -r out/* . || echo "ERROR: Failed to copy files!"
+          cp -r out/.* . 2>/dev/null || true
+          
+          # Ensure .nojekyll exists
           if [ -f out/.nojekyll ]; then
             cp out/.nojekyll .
           else
             touch .nojekyll
           fi
           
+          # Verify index.html exists
+          if [ ! -f index.html ]; then
+            echo "ERROR: index.html not found after copy!"
+            ls -la | head -20
+            exit 1
+          fi
+          
+          echo "Files copied successfully. Listing root directory:"
+          ls -la | head -20
+          
           # Add all files
           git add -A
+          
+          # Show what will be committed
+          echo "Files staged for commit:"
+          git status --short | head -20
           
           # Commit with unique message to force update
           git commit -m "Deploy: $(date +%Y-%m-%d-%H%M%S) - Force rebuild" || exit 0
