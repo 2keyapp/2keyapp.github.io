@@ -78,6 +78,9 @@ jobs:
             touch .nojekyll
           fi
           
+          # Remove the out/ directory after copying (it shouldn't be in the static branch)
+          rm -rf out/
+          
           # Verify index.html exists
           if [ ! -f index.html ]; then
             echo "ERROR: index.html not found after copy!"
@@ -87,6 +90,9 @@ jobs:
           
           echo "Files copied successfully. Listing root directory:"
           ls -la | head -20
+          echo ""
+          echo "Verifying index.html exists:"
+          ls -la index.html || echo "ERROR: index.html missing!"
           
           # Add all files
           git add -A
