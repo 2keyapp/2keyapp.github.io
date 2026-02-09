@@ -84,12 +84,12 @@ export default function WhatYouEarnOn() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mb-3">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-white mb-2">
               What You Earn On
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-xl">
+            <p className="text-xs sm:text-sm md:text-base text-gray-300 max-w-xl">
               Multiple revenue streams, one simple dashboard.
             </p>
           </div>

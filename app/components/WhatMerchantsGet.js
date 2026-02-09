@@ -3,11 +3,11 @@ export default function WhatMerchantsGet() {
     <section className="relative py-20 sm:py-24 lg:py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-left mb-16 sm:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-navy mb-6 leading-tight">
+        <div className="text-left mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-navy mb-4 leading-tight">
             What merchants get
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl leading-relaxed">
             The complete infrastructure to scale your global sales network while maintaining 100% control over your revenue, customer relationships, and brand identity.
           </p>
         </div>

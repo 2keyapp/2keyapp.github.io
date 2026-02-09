@@ -39,7 +39,7 @@ export default function SellerOnboarding() {
     <section className="w-full py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-center text-4xl font-bold text-gray-900 mb-20">
+        <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-16">
           Seller Onboarding Flow
         </h2>
 

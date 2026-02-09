@@ -82,16 +82,16 @@ export default function InfluencerNetwork() {
     <section className="relative py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-teal/10 border border-teal/20">
             <span className="text-xs font-heading font-semibold text-teal uppercase tracking-wider">
               INFLUENCER NETWORK
             </span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-navy mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-navy mb-4 leading-tight">
             Unlock the full potential of your influence.
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Join an ecosystem built on transparency, recurring revenue, and decentralization. We provide the tools you need to grow your personal brand into a sustainable business.
           </p>
         </div>

@@ -21,7 +21,7 @@ export default function TrustHero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
               <span className="text-white">Infrastructure built on{' '}</span>
               <span className="text-teal">trust.</span>
             </h1>

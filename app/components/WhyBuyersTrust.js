@@ -87,7 +87,7 @@ export default function WhyBuyersTrust() {
           
           {/* Left Section: Why Buyers Trust It */}
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mb-8 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-white mb-6 leading-tight">
               Why Buyers Trust It
             </h2>
             
