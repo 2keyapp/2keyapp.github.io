@@ -8,6 +8,12 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
@@ -66,3 +72,8 @@ jobs:
           
           # Push to static branch (token is automatically available from checkout action)
           git push origin static --force
+          
+      - name: Verify deployment
+        run: |
+          echo "Deployment complete! Files should be in the static branch."
+          echo "Check: https://github.com/${{ github.repository }}/tree/static"
