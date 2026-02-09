@@ -79,7 +79,12 @@ jobs:
           # Push to static branch
           git push origin static --force
           
+          # Create an empty commit to trigger Pages rebuild
+          git commit --allow-empty -m "Trigger Pages rebuild - $(date +%Y-%m-%d-%H%M%S)" || true
+          git push origin static || true
+          
       - name: Verify deployment
         run: |
           echo "Deployment complete! Files should be in the static branch."
           echo "Check: https://github.com/${{ github.repository }}/tree/static"
+          echo "GitHub Pages should rebuild automatically. Wait 2-3 minutes."
