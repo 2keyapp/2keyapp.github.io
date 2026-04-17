@@ -61,16 +61,6 @@ export default function Footer() {
                   For Influencers
                 </Link>
               </li>
-              <li>
-                <Link href="/buyers" className="text-gray-300 hover:text-teal transition-colors text-sm sm:text-base">
-                  For Buyers
-                </Link>
-              </li>
-              <li>
-                <Link href="/trust" className="text-gray-300 hover:text-teal transition-colors text-sm sm:text-base">
-                  Trust & Security
-                </Link>
-              </li>
             </ul>
           </div>
 

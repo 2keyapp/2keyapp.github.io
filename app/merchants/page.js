@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import MerchantsHero from '../components/MerchantsHero'
+import MerchantsHowItWorks from '../components/MerchantsHowItWorks'
 import WhatMerchantsGet from '../components/WhatMerchantsGet'
 import MerchantOfRecordClarity from '../components/MerchantOfRecordClarity'
 import SellerOnboardingFlow from '../components/SellerOnboardingFlow'
@@ -12,6 +13,7 @@ export default function MerchantsPage() {
       <Header />
       <main className="min-h-screen bg-white">
         <MerchantsHero />
+        <MerchantsHowItWorks />
         <WhatMerchantsGet />
         <MerchantOfRecordClarity />
         <SellerOnboardingFlow />

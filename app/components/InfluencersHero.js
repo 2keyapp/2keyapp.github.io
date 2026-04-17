@@ -11,7 +11,7 @@ export default function InfluencersHero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
+
           {/* Left Side: Text Content */}
           <div className="space-y-8">
             {/* Badge */}
@@ -21,15 +21,14 @@ export default function InfluencersHero() {
 
             {/* Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
-              <span className="text-white">Get paid for real influence — not{' '}</span>
-              <span className="text-teal">guesswork.</span>
+              <span className="text-white">Influencers</span>
             </h1>
-            
+
             {/* Description */}
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
-              The only attribution engine built for modern creators. Real-time transparency, billing-level accuracy, and built for recurring revenue.
+              Promote products from our Merchants. View and accept Offers from merchants.
             </p>
-            
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link

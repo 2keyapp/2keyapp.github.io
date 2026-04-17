@@ -96,75 +96,34 @@ export default function What2keyDoes() {
             </div>
           </div>
 
-          {/* Card 3: Buyers */}
-          <div className="rounded-2xl p-6 sm:p-8 bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow">
+          {/* Card 3: 2key Transparency */}
+          <div className="rounded-2xl p-6 sm:p-8 bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
             <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-6">
-              <svg className="w-6 h-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+              <svg className="w-6 h-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             
             <h3 className="text-2xl sm:text-3xl font-heading font-bold text-navy mb-4">
-              Buyers get a clean experience
+              Billing transparency
             </h3>
             
-            <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
-              Unified billing for a world of fragmented shopping. Customers manage subscriptions and orders in one secure place.
+            <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed flex-1">
+              Clear compliance built into every checkout experience to establish trust.
             </p>
 
-            {/* Order Summary */}
-            <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Order Summary</div>
-              <div className="space-y-2 mb-3">
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-700">Merchant A: Item 1</span>
-                  <span className="font-semibold text-gray-900">$45.00</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-700">Merchant B: Item 2</span>
-                  <span className="font-semibold text-gray-900">$22.00</span>
-                </div>
-              </div>
-              <div className="pt-3 border-t border-gray-200 flex justify-between items-center">
-                <span className="text-sm font-semibold text-gray-700">Total Bill</span>
-                <span className="text-xl font-bold text-teal">$67.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Billing Transparency Disclosure */}
-        <div className="rounded-2xl p-6 sm:p-8 lg:p-10 bg-white/5 backdrop-blur-sm border border-white/10">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-12">
-            {/* Left: Title and Description */}
-            <div className="flex-1">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-teal/20 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl sm:text-2xl font-heading font-bold text-white">
-                  Billing Transparency Disclosure
-                </h3>
-              </div>
-              <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                Clear compliance built into every checkout experience to establish trust.
-              </p>
-            </div>
-
-            {/* Right: Two Columns */}
-            <div className="flex-1 lg:max-w-2xl">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* Disclosure Info */}
+            <div className="bg-gray-50 rounded-xl p-4 border border-gray-200 mt-auto">
+              <div className="space-y-4">
                 <div>
-                  <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">PROCESSING ENTITY</div>
-                  <p className="text-base sm:text-lg font-semibold text-teal">
+                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">PROCESSING ENTITY</div>
+                  <p className="text-sm font-semibold text-teal">
                     Billing provided by 2key.app
                   </p>
                 </div>
                 <div>
-                  <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">LEGAL MERCHANT OF RECORD</div>
-                  <p className="text-base sm:text-lg font-semibold text-white">
+                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">LEGAL MERCHANT OF RECORD</div>
+                  <p className="text-sm font-semibold text-navy">
                     Seller you are purchasing from
                   </p>
                 </div>
