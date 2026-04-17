@@ -11,16 +11,16 @@ export default function InfluencerFAQ() {
   ]
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 bg-white border-t border-gray-200 overflow-hidden">
+    <section className="relative py-16 sm:py-20 lg:py-24 bg-navy border-t border-white/10 overflow-hidden">
       {/* Decorative gradient blur */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-teal/10 blur-[100px] rounded-full pointer-events-none -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-navy mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Everything you need to know about earning as an affiliate on 2key.
           </p>
         </div>
@@ -29,15 +29,15 @@ export default function InfluencerFAQ() {
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="bg-white border border-gray-200 shadow-sm rounded-2xl p-6 hover:shadow-md transition-shadow duration-300"
+              className="bg-white/5 border border-white/10 shadow-sm rounded-2xl p-6 hover:shadow-md hover:border-teal/30 transition-all duration-300"
             >
-              <h3 className="text-lg sm:text-xl font-heading font-bold text-navy mb-3 flex items-start gap-3">
+              <h3 className="text-lg sm:text-xl font-heading font-bold text-white mb-3 flex items-start gap-3">
                 <svg className="w-6 h-6 text-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 {faq.question}
               </h3>
-              <p className="text-gray-600 text-base leading-relaxed pl-9">
+              <p className="text-gray-300 text-base leading-relaxed pl-9">
                 {faq.answer}
               </p>
             </div>
