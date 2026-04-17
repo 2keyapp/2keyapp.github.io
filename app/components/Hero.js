@@ -16,12 +16,12 @@ export default function Hero() {
           {/* LEFT SIDE: Text Content */}
           <div className="space-y-8">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-tight">
-              One checkout. Many merchants.{' '}
-              <span className="text-teal">Built for influencers.</span>
+              The easiest way to track{' '}
+              <span className="text-teal">influencer-driven revenue</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
-              The billing layer that keeps you the Merchant of Record while influencers get paid automatically.
+              Create promo codes for affiliates, track every checkout, and pay commissions automatically.
             </p>
             
             {/* CTA Buttons (Segment style like screenshot) */}
@@ -74,8 +74,12 @@ export default function Hero() {
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-300">Setup Fee</span>
                     <span className="font-semibold">$0.00</span>
-              </div>
-            </div>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-teal">Discount</span>
+                    <span className="font-semibold text-teal">-$19.80</span>
+                  </div>
+                </div>
 
                 {/* Promo Code Input - Pulsating */}
                 <div className="mb-4 p-3 bg-teal/10 rounded-lg border border-teal/30 relative overflow-hidden">

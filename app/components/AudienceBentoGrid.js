@@ -42,10 +42,9 @@ export default function AudienceBentoGrid() {
           </div>
 
           {/* Tile 2: Influencers */}
-          <div className="glass rounded-2xl p-8 lg:p-10 bg-gradient-to-br from-lavender/30 to-teal/10 text-navy group hover:from-lavender/40 hover:to-teal/20 hover-influencer transition-all duration-300">
+          {/* <div className="glass rounded-2xl p-8 lg:p-10 bg-gradient-to-br from-lavender/30 to-teal/10 text-navy group hover:from-lavender/40 hover:to-teal/20 hover-influencer transition-all duration-300">
             <h3 className="text-3xl font-heading font-bold mb-4">Get paid for real influence.</h3>
             
-            {/* Revenue Graph Visual */}
             <div className="mb-6 p-4 bg-white/50 rounded-lg">
               <div className="text-xs text-gray-600 mb-2">Recurring Revenue from Renewals</div>
               <div className="flex items-end gap-2 h-24">
@@ -66,13 +65,13 @@ export default function AudienceBentoGrid() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </Link>
-          </div>
+          </div> */}
 
           {/* Tile 3: Buyers */}
-          <div className="glass rounded-2xl p-8 lg:p-10 bg-white text-navy group hover:shadow-xl transition-all duration-300">
+          {/* <div className="glass rounded-2xl p-8 lg:p-10 bg-white text-navy group hover:shadow-xl transition-all duration-300">
             <h3 className="text-3xl font-heading font-bold mb-4">One identity.</h3>
             
-            {/* Billing History Mockup */}
+          
             <div className="mb-6 space-y-3">
               <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
                 <div className="text-sm font-semibold">Scomm.ai</div>
@@ -89,7 +88,7 @@ export default function AudienceBentoGrid() {
             </div>
 
             <p className="text-sm text-gray-600">Unified billing across all merchants</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

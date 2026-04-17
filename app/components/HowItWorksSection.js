@@ -41,7 +41,7 @@ export default function HowItWorksSection() {
       id: 2,
       number: "2",
       title: "Influencers promote with style",
-      description: "Influencers get unique checkout links and visual promo codes. When they share, 2key tracks the attribution across every merchant in the session.",
+      description: "Influencers get unique checkout links and visual promo codes. 2key tracks the code and attributes every purchase made using it to them.",
       promoCode: "Use code CREATOR20 for 20% off!",
       iconColor: "orange",
       visual: (
@@ -59,7 +59,8 @@ export default function HowItWorksSection() {
                   <span className="px-2 py-0.5 bg-orange-100 text-orange-600 text-xs font-semibold rounded">PROMO</span>
                 </div>
                 <p className="text-sm text-gray-700 mb-3">
-                  Click the link in my bio to shop the collection from 10+ brands with one checkout! :)
+                  @topcreatorPROMO
+Use code CREATOR20 to get 20% off your next purchase0
                 </p>
                 <div className="px-4 py-2 bg-gray-100 rounded-lg text-center">
                   <span className="font-mono font-bold text-gray-900">CREATOR20</span>
@@ -70,45 +71,45 @@ export default function HowItWorksSection() {
         </div>
       ),
     },
+    // {
+    //   id: 3,
+    //   number: "3",
+    //   title: "Authenticated once, shop everywhere",
+    //   description: "2key's SSO modal handles customer identity. Once a buyer logs in, they are recognized across every 2key-powered merchant store.",
+    //   features: [
+    //     { title: "Unified Customer Profile", subtitle: "shared shipping and billing info across merchants" },
+    //     { title: "Secure Password-less Login", subtitle: "email magic links or biometric login for frictionless checkout" },
+    //   ],
+    //   iconColor: "purple",
+    //   visual: (
+    //     <div className="bg-white rounded-xl border border-gray-200 shadow-lg p-6">
+    //       <div className="mb-4">
+    //         <h4 className="text-lg font-semibold text-gray-900 mb-4">Welcome to 2key SSO</h4>
+    //         <div className="space-y-3">
+    //           <input 
+    //             type="email" 
+    //             placeholder="Enter your email"
+    //             className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
+    //           />
+    //           <button className="w-full px-4 py-3 bg-teal text-white rounded-lg text-sm font-semibold hover:bg-teal/90 transition-colors">
+    //             Continue with Email
+    //           </button>
+    //           <div className="flex items-center gap-3">
+    //             <button className="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
+    //               Google
+    //             </button>
+    //             <button className="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
+    //               Apple
+    //             </button>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   ),
+    // },
     {
       id: 3,
       number: "3",
-      title: "Authenticated once, shop everywhere",
-      description: "2key's SSO modal handles customer identity. Once a buyer logs in, they are recognized across every 2key-powered merchant store.",
-      features: [
-        { title: "Unified Customer Profile", subtitle: "shared shipping and billing info across merchants" },
-        { title: "Secure Password-less Login", subtitle: "email magic links or biometric login for frictionless checkout" },
-      ],
-      iconColor: "purple",
-      visual: (
-        <div className="bg-white rounded-xl border border-gray-200 shadow-lg p-6">
-          <div className="mb-4">
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">Welcome to 2key SSO</h4>
-            <div className="space-y-3">
-              <input 
-                type="email" 
-                placeholder="Enter your email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
-              />
-              <button className="w-full px-4 py-3 bg-teal text-white rounded-lg text-sm font-semibold hover:bg-teal/90 transition-colors">
-                Continue with Email
-              </button>
-              <div className="flex items-center gap-3">
-                <button className="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
-                  Google
-                </button>
-                <button className="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
-                  Apple
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: 4,
-      number: "4",
       title: "Automated, instant settlements",
       description: "Every transaction is automatically split at the source. Merchants, influencers, and platforms get paid their share instantly without manual reconciliation.",
       stats: [
@@ -222,11 +223,10 @@ export default function HowItWorksSection() {
             THE WORKFLOW
           </h3>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-navy mb-4 leading-tight">
-            How 2key powers commerce
+            From Influence To Revenue
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Four simple steps to unify your checkout experience across domains, influencers, and payments.
-          </p>
+          A unified system for tracking influence, attribution, and commissions. </p>
         </div>
 
         {/* Steps */}
