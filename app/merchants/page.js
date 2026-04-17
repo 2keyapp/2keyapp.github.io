@@ -5,6 +5,7 @@ import MerchantsHowItWorks from '../components/MerchantsHowItWorks'
 import WhatMerchantsGet from '../components/WhatMerchantsGet'
 import MerchantOfRecordClarity from '../components/MerchantOfRecordClarity'
 import SellerOnboardingFlow from '../components/SellerOnboardingFlow'
+import MerchantFAQ from '../components/MerchantFAQ'
 import Link from 'next/link'
 
 export default function MerchantsPage() {
@@ -17,6 +18,7 @@ export default function MerchantsPage() {
         <WhatMerchantsGet />
         <MerchantOfRecordClarity />
         <SellerOnboardingFlow />
+        <MerchantFAQ />
       </main>
       <Footer />
     </>

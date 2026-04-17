@@ -5,6 +5,7 @@ import InfluencersHowItWorks from '../components/InfluencersHowItWorks'
 import WhyWeAreDifferent from '../components/WhyWeAreDifferent'
 import WhatYouEarnOn from '../components/WhatYouEarnOn'
 import InfluencerNetwork from '../components/InfluencerNetwork'
+import InfluencerFAQ from '../components/InfluencerFAQ'
 
 export default function InfluencersPage() {
   return (
@@ -15,6 +16,7 @@ export default function InfluencersPage() {
       <WhyWeAreDifferent />
       <WhatYouEarnOn />
       <InfluencerNetwork />
+      <InfluencerFAQ />
       <Footer />
     </>
   )
