@@ -9,7 +9,7 @@ export default function DashboardLayout({ children }) {
         <div className="h-full flex flex-col">
           <div className="h-16 flex items-center px-6">
             <span className="text-xl font-bold font-heading text-white">
-              2Key <span className="text-teal">Network</span>
+              2Key<span className="text-teal">.app</span>
             </span>
           </div>
           
@@ -22,6 +22,18 @@ export default function DashboardLayout({ children }) {
                   <Link href="/dashboard/merchant" className="flex items-center px-3 py-2.5 text-sm font-medium text-gray-300 rounded-lg hover:bg-white/10 hover:text-white transition-all group">
                     <Store className="w-5 h-5 mr-3 text-gray-400 group-hover:text-teal transition-colors" />
                     Dashboard
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/dashboard/merchant/approvals" className="flex items-center px-3 py-2.5 text-sm font-medium text-gray-300 rounded-lg hover:bg-white/10 hover:text-white transition-all group">
+                    <Users className="w-5 h-5 mr-3 text-gray-400 group-hover:text-teal transition-colors" />
+                    Approvals
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/dashboard/merchant/promo-codes" className="flex items-center px-3 py-2.5 text-sm font-medium text-gray-300 rounded-lg hover:bg-white/10 hover:text-white transition-all group">
+                    <Megaphone className="w-5 h-5 mr-3 text-gray-400 group-hover:text-teal transition-colors" />
+                    Promo Codes
                   </Link>
                 </li>
                 <li>

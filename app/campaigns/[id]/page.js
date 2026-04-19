@@ -40,7 +40,7 @@ export default function CampaignDetailsPage({ params }) {
             <span className="hidden sm:inline">Back to Marketplace</span>
           </Link>
           <span className="text-lg sm:text-xl font-bold font-heading text-navy flex-shrink-0">
-            2Key <span className="text-teal">Network</span>
+            2Key<span className="text-teal">.app</span>
           </span>
         </div>
       </header>
