@@ -131,7 +131,7 @@ Use code CREATOR20 to get 20% off your next purchase0
                 <div className="text-lg font-bold text-gray-900">$100.00</div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="p-3 bg-green-50 rounded-lg border border-green-200">
                 <div className="flex items-center gap-2 mb-1">
                   <div className="w-6 h-6 rounded bg-green-500 flex items-center justify-center">
@@ -252,7 +252,7 @@ Use code CREATOR20 to get 20% off your next purchase0
                   </div>
                 </div>
 
-                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-navy leading-tight">
+                <h3 className="text-2xl sm:text-3xl lg:text-5xl font-heading font-bold text-navy leading-tight">
                   {step.title}
                 </h3>
 

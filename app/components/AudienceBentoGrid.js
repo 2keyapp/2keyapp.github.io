@@ -32,7 +32,7 @@ export default function AudienceBentoGrid() {
             </ul>
             <Link
               href="/merchants"
-              className="inline-flex items-center gap-2 text-teal font-heading font-semibold hover:gap-3 transition-all"
+              className="flex sm:inline-flex items-center justify-between sm:justify-start gap-2 px-6 py-3 sm:px-0 sm:py-0 bg-white/5 sm:bg-transparent border border-white/10 sm:border-none rounded-xl sm:rounded-none text-teal font-heading font-semibold hover:gap-3 transition-all w-full sm:w-auto"
             >
               Learn more
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

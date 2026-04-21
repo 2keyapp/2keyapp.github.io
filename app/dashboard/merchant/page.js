@@ -9,7 +9,7 @@ export default function MerchantDashboard() {
           <h1 className="text-3xl font-bold font-heading text-navy tracking-tight">Overview</h1>
           <p className="text-gray-500 mt-2 text-sm">Track your affiliate campaigns and commission payouts.</p>
         </div>
-        <Link href="/dashboard/merchant/campaigns/new" className="bg-navy text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-navy/90 transition-all shadow-[0_8px_20px_rgb(10,25,47,0.2)] inline-block">
+        <Link href="/dashboard/merchant/campaigns/new" className="bg-navy text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-navy/90 transition-all shadow-[0_8px_20px_rgb(10,25,47,0.2)] w-full sm:w-auto text-center mt-4 sm:mt-0">
           + New Campaign
         </Link>
       </div>

@@ -3,19 +3,19 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center bg-navy text-white overflow-hidden">
+    <section className="relative h-screen pb-20 lg:h-screen flex items-center bg-navy text-white overflow-hidden">
       {/* Background gradient effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-teal/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blurple/10 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-16 sm:pb-20 lg:py-28 relative z-10 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-2 sm:pt-20 sm:pb-20 lg:py-28 relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* LEFT SIDE: Text Content */}
           <div className="space-y-8">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-tight">
+            <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-tight">
               The easiest way to track{' '}
               <span className="text-teal">influencer-driven revenue</span>
             </h1>
@@ -28,7 +28,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
               <Link
                 href="/merchants"
-                className="group inline-flex items-center justify-center gap-3 px-6 py-4 sm:px-8 sm:py-4 rounded-2xl bg-teal text-navy font-heading font-bold text-base sm:text-lg shadow-xl shadow-teal/20 hover:bg-teal/90 hover:shadow-teal/30 transition-all min-w-[180px] sm:min-w-[200px]"
+                className="group inline-flex items-center justify-center gap-3 px-6 py-4 sm:px-8 sm:py-4 rounded-2xl bg-teal text-navy font-heading font-bold text-base sm:text-lg shadow-xl shadow-teal/20 hover:bg-teal/90 hover:shadow-teal/30 transition-all w-full sm:w-auto min-w-[180px] sm:min-w-[200px]"
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
@@ -38,7 +38,7 @@ export default function Hero() {
               
               <Link
                 href="/influencers"
-                className="group inline-flex items-center justify-center gap-3 px-6 py-4 sm:px-8 sm:py-4 rounded-2xl bg-white text-navy font-heading font-bold text-base sm:text-lg border-2 border-gray-200 hover:border-teal hover:shadow-lg transition-all min-w-[180px] sm:min-w-[200px]"
+                className="group inline-flex items-center justify-center gap-3 px-6 py-4 sm:px-8 sm:py-4 rounded-2xl bg-white text-navy font-heading font-bold text-base sm:text-lg border-2 border-gray-200 hover:border-teal hover:shadow-lg transition-all w-full sm:w-auto min-w-[180px] sm:min-w-[200px]"
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -50,7 +50,7 @@ export default function Hero() {
                 </div>
 
           {/* RIGHT SIDE: Interactive Checkout Card */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative sm:flex items-center justify-center  hidden">
             <div className="relative w-full max-w-md">
               {/* Floating 3D Checkout Card */}
               <div className="glass-dark rounded-2xl p-6 shadow-2xl transform hover:scale-105 transition-transform duration-300">

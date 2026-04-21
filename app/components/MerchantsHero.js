@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function MerchantsHero() {
   return (
-    <section className="relative h-screen bg-navy py-6 lg:py-16 overflow-hidden">
+    <section className="relative min-h-screen lg:h-screen bg-navy py-6 lg:py-16 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           

@@ -61,7 +61,7 @@ export default function What2keyDoes() {
           </div>
 
           {/* Card 2: Influencers - Elevated Center Card */}
-          <div className="rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-teal via-teal/95 to-teal/90 border-2 border-teal shadow-2xl hover:shadow-3xl transition-all relative overflow-hidden -mt-6 sm:-mt-8 lg:-mt-10">
+          <div className="rounded-2xl p-6 sm:p-8 bg-gradient-to-br from-teal via-teal/95 to-teal/90 border-2 border-teal shadow-2xl hover:shadow-3xl transition-all relative overflow-hidden mt-0 lg:-mt-10">
             {/* Animated gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-teal/70 via-lavender/50 to-teal/60 animate-pulse opacity-40"></div>
             <div className="relative z-10">

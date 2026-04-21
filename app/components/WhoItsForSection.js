@@ -112,7 +112,7 @@ export default function WhoItsForSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-white mb-6 leading-tight  tracking-tight">
+          <h2 className="text-3xl sm:text-5xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight  tracking-tight">
             Who is 2key for?
           </h2>
           <p className="text-xl sm:text-2xl md:text-2xl lg:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
@@ -138,7 +138,7 @@ export default function WhoItsForSection() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-3xl sm:text-3xl lg:text-3xl font-heading font-bold text-white mb-5 text-center">
+                <h3 className="text-2xl sm:text-3xl lg:text-3xl font-heading font-bold text-white mb-5 text-center">
                   {category.title}
                 </h3>
 
@@ -177,7 +177,7 @@ export default function WhoItsForSection() {
                 <div className="text-center pt-4 border-t border-white/10 mt-auto">
                   <a
                     href="#"
-                    className={`inline-flex items-center gap-2 font-semibold text-lg sm:text-xl transition-all duration-300 group/cta ${colors.cta}`}
+                    className={`flex sm:inline-flex items-center justify-center gap-2 font-semibold text-lg sm:text-xl transition-all duration-300 group/cta ${colors.cta} w-full sm:w-auto`}
                   >
                     <span>{category.cta}</span>
                     <svg 
