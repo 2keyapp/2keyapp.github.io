@@ -16,14 +16,14 @@ export default function Header() {
   const isActive = (href) => pathname === href
 
   return (
-    <header className="bg-navy/95 backdrop-blur-md w-full sticky top-0 z-50 border-b border-white/10">
+    <header className="bg-navy w-full sticky top-0 z-50 border-b border-white/10">
       <nav className="w-full relative">
-        <div className="flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-12">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center group">
-              <div className="text-teal text-2xl font-bold font-heading group-hover:text-teal/80 transition-colors">2key</div>
-              <span className="text-white/80 text-2xl font-bold font-heading group-hover:text-white transition-colors">.app</span>
+              <div className="text-teal text-xl sm:text-2xl font-bold font-heading group-hover:text-teal/80 transition-colors">2key</div>
+              <span className="text-white/80 text-xl sm:text-2xl font-bold font-heading group-hover:text-white transition-colors">.app</span>
             </Link>
           </div>
 
@@ -89,52 +89,52 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <>
-            <div 
-              className="lg:hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-40 top-16 md:top-20"
-              onClick={() => setIsMenuOpen(false)}
-            ></div>
-            <div className="lg:hidden absolute top-full left-0 right-0 bg-navy/98 backdrop-blur-md border-b border-white/10 shadow-lg z-50 pb-4">
-              <div className="flex flex-col space-y-1 pt-4 px-4 sm:px-6">
-                {navLinks.map((link) => {
-                  const active = isActive(link.href)
-                  return (
-                    <Link
-                      key={link.name}
-                      href={link.href}
-                      className={`px-4 py-2 text-base rounded-md transition-colors font-heading font-medium ${
-                        active
-                          ? 'text-teal bg-white/5 font-semibold'
-                          : 'text-white/80 hover:text-teal hover:bg-white/5'
-                      }`}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {link.name}
-                    </Link>
-                  )
-                })}
-                <div className="flex flex-col space-y-2 pt-4 border-t border-white/10">
-                  <Link
-                    href="/login"
-                    className="px-4 py-2.5 border-2 border-white/20 text-white/90 rounded-xl hover:border-teal hover:text-teal hover:bg-white/5 transition-all duration-200 text-base font-heading font-medium text-center"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Login
-                  </Link>
-                  <Link
-                    href="/signup"
-                    className="group relative px-4 py-2.5 bg-teal text-navy rounded-xl overflow-hidden transition-all hover:bg-teal/80 hover:shadow-lg hover:shadow-teal/30 text-base font-heading font-semibold text-center"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <div className="absolute inset-0 w-full h-full bg-white/10 group-hover:opacity-100 opacity-0 transition-opacity duration-300"></div>
-                    <span className="relative">Get Started</span>
-                  </Link>
-                </div>
-              </div>
+        <div 
+          className={`lg:hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-40 top-16 md:top-20 transition-opacity duration-300 ${
+            isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
+          onClick={() => setIsMenuOpen(false)}
+        ></div>
+        <div className={`lg:hidden absolute top-full left-0 right-0 bg-navy border-b border-white/10 shadow-lg z-50 pb-4 transition-all duration-300 transform ${
+          isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+        }`}>
+          <div className="flex flex-col space-y-1 pt-4 px-4 sm:px-6">
+            {navLinks.map((link) => {
+              const active = isActive(link.href)
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={`px-4 py-2 text-base rounded-md transition-colors font-heading font-medium ${
+                    active
+                      ? 'text-teal bg-white/5 font-semibold'
+                      : 'text-white/80 hover:text-teal hover:bg-white/5'
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              )
+            })}
+            <div className="flex flex-col space-y-2 pt-4 border-t border-white/10">
+              <Link
+                href="/login"
+                className="px-4 py-2.5 border-2 border-white/20 text-white/90 rounded-xl hover:border-teal hover:text-teal hover:bg-white/5 transition-all duration-200 text-base font-heading font-medium text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Login
+              </Link>
+              <Link
+                href="/signup"
+                className="group relative px-4 py-2.5 bg-teal text-navy rounded-xl overflow-hidden transition-all hover:bg-teal/80 hover:shadow-lg hover:shadow-teal/30 text-base font-heading font-semibold text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <div className="absolute inset-0 w-full h-full bg-white/10 group-hover:opacity-100 opacity-0 transition-opacity duration-300"></div>
+                <span className="relative">Get Started</span>
+              </Link>
             </div>
-          </>
-        )}
+          </div>
+        </div>
       </nav>
     </header>
   )
