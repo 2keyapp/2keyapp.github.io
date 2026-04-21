@@ -161,7 +161,7 @@ export default function MerchantsHowItWorks() {
           <h3 className="text-sm sm:text-base font-heading font-semibold text-teal uppercase tracking-wider mb-4">
             HOW IT WORKS FOR MERCHANTS
           </h3>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-navy mb-4 leading-tight">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-bold text-navy mb-4 leading-tight">
             Checkout on autopilot
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
@@ -238,7 +238,7 @@ export default function MerchantsHowItWorks() {
                 )}
 
                 {step.stats && (
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {step.stats.map((stat, idx) => (
                       <div key={idx} className="p-4 bg-white shadow-sm rounded-lg border border-gray-200">
                         <div className="text-xs font-semibold text-gray-500 uppercase mb-1">{stat.label}</div>

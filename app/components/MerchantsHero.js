@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 export default function MerchantsHero() {
   return (
-    <section className="relative min-h-screen lg:h-screen bg-navy py-6 lg:py-16 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="relative h-fit lg:h-screen bg-navy  lg:py-16 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-12 sm:pt-20 lg:py-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
           {/* Left Side: Text Content */}
@@ -13,11 +13,11 @@ export default function MerchantsHero() {
               <svg className="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
               </svg>
-              <span className="text-sm font-heading font-semibold text-teal uppercase tracking-wider">FULL AUTONOMY</span>
+              <span className="text-xs sm:text-sm font-heading font-semibold text-teal uppercase tracking-wider">FULL AUTONOMY</span>
             </div>
 
             {/* Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight">
               <span className="text-white">Sell globally.</span>{' '}
               <span className="text-teal">Stay Merchant of Record.</span>
             </h1>
@@ -31,13 +31,13 @@ export default function MerchantsHero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Link
                 href="/signup"
-                className="inline-flex items-center justify-center px-8 py-4 bg-teal text-navy rounded-xl font-heading font-bold text-lg hover:bg-teal/90 transition-colors text-center"
+                className="inline-flex items-center justify-center px-6 py-3 lg:px-8 lg:py-4 bg-teal text-navy rounded-xl font-heading font-bold text-base lg:text-lg hover:bg-teal/90 transition-colors text-center"
               >
                 Create Merchant Account
               </Link>
               <Link
                 href="/docs"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white rounded-xl font-heading font-semibold text-lg hover:border-teal hover:bg-white/20 hover:shadow-lg transition-all text-center"
+                className="inline-flex items-center justify-center px-6 py-3 lg:px-8 lg:py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white rounded-xl font-heading font-semibold text-base lg:text-lg hover:border-teal hover:bg-white/20 hover:shadow-lg transition-all text-center"
               >
                 View API Docs
               </Link>
@@ -45,7 +45,7 @@ export default function MerchantsHero() {
           </div>
 
           {/* Right Side: Dashboard Graphic */}
-          <div className="relative flex items-center justify-center">
+          <div className="relative hidden sm:flex items-center justify-center">
             <div className="relative w-full max-w-lg">
               {/* Dashboard Frame */}
               <div className="glass-dark rounded-2xl p-6 bg-navy border border-white/10 shadow-2xl">

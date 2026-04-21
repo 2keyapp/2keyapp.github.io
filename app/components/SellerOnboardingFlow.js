@@ -44,16 +44,16 @@ export default function SellerOnboarding() {
         </h2>
 
         {/* Steps */}
-        <div className="relative flex items-start justify-between">
-          {/* Connecting line - starts from first step, ends at last step */}
-          <div className="absolute top-10 left-[8%] right-[8%] h-px bg-gray-200" />
+        <div className="relative flex flex-col sm:flex-row items-center sm:items-start justify-between gap-12 sm:gap-0">
+          {/* Connecting line - hidden on mobile */}
+          <div className="absolute top-10 left-[8%] right-[8%] h-px bg-gray-200 hidden sm:block" />
 
           {steps.map((step, index) => {
             const IconComponent = step.icon;
             return (
               <div
                 key={index}
-                className="relative z-10 flex flex-col items-center text-center max-w-[200px]"
+                className="relative z-10 flex flex-col items-center text-center w-full sm:max-w-[200px]"
               >
                 {/* Icon box */}
                 <div className="relative">
@@ -75,10 +75,10 @@ export default function SellerOnboarding() {
                 </div>
 
                 {/* Text */}
-                <h3 className="mt-6 font-semibold text-gray-900">
+                <h3 className="mt-6 font-semibold text-gray-900 text-lg">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm text-gray-500">
+                <p className="mt-2 text-sm text-gray-500 max-w-[250px] sm:max-w-none">
                   {step.desc}
                 </p>
               </div>
@@ -87,9 +87,10 @@ export default function SellerOnboarding() {
         </div>
 
         {/* CTA */}
-        <div className="flex justify-center mt-24">
-          <button className="px-10 py-4 rounded-full bg-navy text-white font-semibold text-lg hover:bg-navy/90 transition">
-            Ready to Start? Launch Now →
+        <div className="flex justify-center mt-16 sm:mt-24 px-4 sm:px-0">
+          <button className="w-auto sm:w-auto px-10 py-4 rounded-full bg-navy text-white font-semibold text-md sm:text-lg hover:bg-navy/90 transition">
+            Ready to Start ? <br className='lg:hidden'></br>
+             Launch Now →
           </button>
         </div>
       </div>

@@ -182,7 +182,7 @@ export default function WhatMerchantsGet() {
             
             {/* Visuals */}
             <div className="mt-auto min-h-[180px] flex flex-col justify-end">
-              <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {/* RENEWALS button */}
                 <button className="px-3 py-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-teal hover:bg-teal/5 transition-all">
                   <div className="flex flex-col items-center gap-2">
