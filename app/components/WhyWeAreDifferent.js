@@ -27,7 +27,7 @@ export default function WhyWeAreDifferent() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-navy mb-4">
+          <h2 className="text-2xl sm:text-4xl font-heading font-bold text-navy mb-4">
             Why We Are Different
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -41,13 +41,13 @@ export default function WhyWeAreDifferent() {
             <table className="min-w-full divide-y divide-gray-200">
               <thead>
                 <tr>
-                  <th className="px-6 py-4 text-left text-sm font-heading font-semibold text-navy uppercase tracking-wider bg-gray-50">
+                  <th className="px-4 sm:px-6 py-4 text-left text-xs sm:text-sm font-heading font-semibold text-navy uppercase tracking-wider bg-gray-50">
                     Features
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-heading font-semibold text-gray-600 uppercase tracking-wider bg-gray-50">
+                  <th className="px-4 sm:px-6 py-4 text-left text-xs sm:text-sm font-heading font-semibold text-gray-600 uppercase tracking-wider bg-gray-50">
                     Legacy Affiliate Networks
                   </th>
-                  <th className="px-6 py-4 text-left text-sm font-heading font-semibold text-blurple uppercase tracking-wider bg-blurple/5">
+                  <th className="px-4 sm:px-6 py-4 text-left text-xs sm:text-sm font-heading font-semibold text-blurple uppercase tracking-wider bg-blurple/5">
                     2keyApp
                   </th>
                 </tr>
@@ -55,13 +55,13 @@ export default function WhyWeAreDifferent() {
               <tbody className="bg-white divide-y divide-gray-200">
                 {comparisons.map((comparison, index) => (
                   <tr key={index} className="hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-6 text-sm font-semibold text-navy">
+                    <td className="px-4 sm:px-6 py-4 sm:py-6 text-xs sm:text-sm font-semibold text-navy">
                       {comparison.feature}
                     </td>
-                    <td className="px-6 py-6 text-sm text-gray-600">
+                    <td className="px-4 sm:px-6 py-4 sm:py-6 text-xs sm:text-sm text-gray-600">
                       {comparison.legacy}
                     </td>
-                    <td className="px-6 py-6">
+                    <td className="px-4 sm:px-6 py-4 sm:py-6">
                       <div className="flex items-center gap-3">
                         <div className="flex-shrink-0 w-5 h-5 rounded-full bg-teal/10 border border-teal/20 flex items-center justify-center">
                           <svg

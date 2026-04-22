@@ -88,7 +88,7 @@ export default function InfluencerNetwork() {
               INFLUENCER NETWORK
             </span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-navy mb-4 leading-tight">
+          <h2 className="text-2xl sm:text-5xl font-heading font-bold text-navy mb-4 leading-tight">
             Unlock the full potential of your influence.
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
