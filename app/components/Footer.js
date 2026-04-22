@@ -61,6 +61,11 @@ export default function Footer() {
                   For Influencers
                 </Link>
               </li>
+              <li>
+                <Link href="/pricing" className="text-gray-300 hover:text-teal transition-colors text-sm sm:text-base">
+                  Pricing
+                </Link>
+              </li>
             </ul>
           </div>
 

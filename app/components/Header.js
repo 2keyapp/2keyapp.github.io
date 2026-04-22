@@ -11,6 +11,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Merchants', href: '/merchants' },
     { name: 'Influencers', href: '/influencers' },
+    { name: 'Pricing', href: '/pricing' },
   ]
 
   const isActive = (href) => pathname === href
