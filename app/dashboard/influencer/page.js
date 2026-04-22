@@ -70,9 +70,9 @@ export default function InfluencerDashboard() {
               </thead>
               <tbody>
                 {[
-                  { merchant: "TechNova Pro", id: "TECH15", link: "2key.link/sarah/technova", rate: "15%" },
-                  { merchant: "HealthBlend", id: "SUMMER", link: "2key.link/sarah/hb", rate: "20%" },
-                  { merchant: "SaaS Analytics", id: "DEFAULT", link: "2key.link/sarah/saas", rate: "10%" }
+                  { merchant: "TechNova Pro", id: "TECH15", link: "earnfluence.link/sarah/technova", rate: "15%" },
+                  { merchant: "HealthBlend", id: "SUMMER", link: "earnfluence.link/sarah/hb", rate: "20%" },
+                  { merchant: "SaaS Analytics", id: "DEFAULT", link: "earnfluence.link/sarah/saas", rate: "10%" }
                 ].map((p, i) => (
                   <tr key={i} className="hover:bg-gray-50/50 transition-colors rounded-xl group">
                     <td className="px-6 py-4 rounded-l-xl">

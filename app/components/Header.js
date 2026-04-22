@@ -22,8 +22,8 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center group">
-              <div className="text-teal text-xl sm:text-2xl font-bold font-heading group-hover:text-teal/80 transition-colors">2key</div>
-              <span className="text-white/80 text-xl sm:text-2xl font-bold font-heading group-hover:text-white transition-colors">.app</span>
+              <div className="text-teal text-xl sm:text-2xl font-bold font-heading group-hover:text-teal/80 transition-colors">Earnfluence</div>
+              <span className="text-white/80 text-xl sm:text-2xl font-bold font-heading group-hover:text-white transition-colors">.io</span>
             </Link>
           </div>
 

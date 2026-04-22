@@ -15,7 +15,7 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: '2key.app - The billing layer for influencers',
+  title: 'Earnfluence.io - The billing layer for influencers',
   description: 'One checkout. Many merchants. Built for influencers. The billing layer that keeps you the Merchant of Record while influencers get paid automatically.',
 }
 

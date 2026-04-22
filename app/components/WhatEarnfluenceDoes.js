@@ -1,4 +1,4 @@
-export default function What2keyDoes() {
+export default function WhatEarnfluenceDoes() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-24 bg-navy overflow-hidden">
       {/* Background decorative elements */}
@@ -11,10 +11,10 @@ export default function What2keyDoes() {
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
-            What 2key Does
+            What Earnfluence Does
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            2key provides the invisible piping that connects brands, creators, and customers across the decentralized web.
+            Earnfluence provides the invisible piping that connects brands, creators, and customers across the decentralized web.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function What2keyDoes() {
             </h3>
             
             <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
-              You remain the owner of your payment processing. 2key handles the billing logic while you maintain the direct relationship with Stripe or PayPal.
+              You remain the owner of your payment processing. Earnfluence handles the billing logic while you maintain the direct relationship with Stripe or PayPal.
             </p>
 
             {/* Ownership Status Card */}
@@ -96,7 +96,7 @@ export default function What2keyDoes() {
             </div>
           </div>
 
-          {/* Card 3: 2key Transparency */}
+          {/* Card 3: Earnfluence Transparency */}
           <div className="rounded-2xl p-6 sm:p-8 bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
             <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-6">
               <svg className="w-6 h-6 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,7 +118,7 @@ export default function What2keyDoes() {
                 <div>
                   <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">PROCESSING ENTITY</div>
                   <p className="text-sm font-semibold text-teal">
-                    Billing provided by 2key.app
+                    Billing provided by Earnfluence.io
                   </p>
                 </div>
                 <div>

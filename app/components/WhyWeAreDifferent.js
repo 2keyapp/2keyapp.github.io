@@ -3,22 +3,22 @@ export default function WhyWeAreDifferent() {
     {
       feature: "Attribution Style",
       legacy: "Last-click only (Opaque)",
-      key2key: "Billing-level (Transparent)",
+      earnfluence: "Billing-level (Transparent)",
     },
     {
       feature: "Reporting Speed",
       legacy: "Delayed / 24-48h Manual",
-      key2key: "Real-time Instant",
+      earnfluence: "Real-time Instant",
     },
     {
       feature: "Earnings Model",
       legacy: "One-time limited payouts",
-      key2key: "Recurring Lifecycle",
+      earnfluence: "Recurring Lifecycle",
     },
     {
       feature: "Cookie Dependency",
       legacy: "High (easily blocked)",
-      key2key: "Zero-Cookie Accuracy",
+      earnfluence: "Zero-Cookie Accuracy",
     },
   ]
 
@@ -31,7 +31,7 @@ export default function WhyWeAreDifferent() {
             Why We Are Different
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Standard affiliate networks rely on cookies and last-clicks. 2key connects directly to billing systems for 100% accuracy.
+            Standard affiliate networks rely on cookies and last-clicks. Earnfluence connects directly to billing systems for 100% accuracy.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export default function WhyWeAreDifferent() {
                     Legacy Affiliate Networks
                   </th>
                   <th className="px-4 sm:px-6 py-4 text-left text-xs sm:text-sm font-heading font-semibold text-blurple uppercase tracking-wider bg-blurple/5">
-                    2keyApp
+                    Earnfluence
                   </th>
                 </tr>
               </thead>
@@ -79,7 +79,7 @@ export default function WhyWeAreDifferent() {
                           </svg>
                         </div>
                         <span className="text-sm font-semibold text-blurple">
-                          {comparison.key2key}
+                          {comparison.earnfluence}
                         </span>
                       </div>
                     </td>

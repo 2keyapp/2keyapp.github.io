@@ -9,8 +9,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4 flex flex-col items-center sm:items-start">
             <div className="flex items-center mb-4">
-              <span className="text-teal text-2xl font-bold font-heading">2key</span>
-              <span className="text-white/80 text-2xl font-bold font-heading">.app</span>
+              <span className="text-teal text-2xl font-bold font-heading">Earnfluence</span>
+              <span className="text-white/80 text-2xl font-bold font-heading">.io</span>
             </div>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
               The billing layer that keeps you the Merchant of Record while influencers get paid automatically.
@@ -18,7 +18,7 @@ export default function Footer() {
             {/* Social Media Links */}
             <div className="flex items-center gap-4">
               <a
-                href="https://twitter.com/2keyapp"
+                href="https://twitter.com/earnfluence"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-teal transition-colors"
@@ -29,7 +29,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://github.com/2keyapp"
+                href="https://github.com/earnfluence"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-teal transition-colors"
@@ -92,7 +92,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             {/* Copyright */}
             <p className="text-gray-300 text-sm sm:text-base text-center sm:text-left">
-              © {new Date().getFullYear()} 2key.app. All rights reserved.
+              © {new Date().getFullYear()} Earnfluence.io. All rights reserved.
             </p>
 
             {/* Legal Links */}

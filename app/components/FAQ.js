@@ -1,7 +1,7 @@
 export default function FAQ() {
   const faqs = [
     {
-      question: "Does 2key become the Merchant of Record?",
+      question: "Does Earnfluence become the Merchant of Record?",
       answer: "No. The seller is always the Merchant of Record.",
     },
     {
@@ -17,7 +17,7 @@ export default function FAQ() {
       answer: "Yes. Required.",
     },
     {
-      question: "Does 2key touch customer funds?",
+      question: "Does Earnfluence touch customer funds?",
       answer: "Only as a platform commission, routed via Stripe/PayPal.",
     },
   ];

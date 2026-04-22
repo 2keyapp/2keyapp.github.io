@@ -15,7 +15,7 @@ export default function InfluencerSettingsPage() {
             Payout Methods
           </h3>
           <p className="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-2xl">
-            2Key supports fully automated routing to your bank via Stripe Connect, or direct balance transfers via PayPal. Select your preferred method below to start receiving your earned commissions.
+            Earnfluence supports fully automated routing to your bank via Stripe Connect, or direct balance transfers via PayPal. Select your preferred method below to start receiving your earned commissions.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function InfluencerSettingsPage() {
                   <span className="bg-teal/10 text-teal text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full">Recommended</span>
                 </div>
                 <p className="text-sm text-gray-500 font-medium leading-relaxed max-w-lg">
-                  Receive payouts directly to your bank account. The fastest and most secure way to withdraw your 2Key earnings globally.
+                  Receive payouts directly to your bank account. The fastest and most secure way to withdraw your Earnfluence earnings globally.
                 </p>
                 <div className="flex items-center gap-4 mt-4 text-xs font-semibold text-gray-400">
                   <span className="flex items-center"><ShieldCheck className="w-4 h-4 mr-1 text-teal" /> Protected processing</span>

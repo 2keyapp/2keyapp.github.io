@@ -116,9 +116,9 @@ export default function PaymentsCompliance() {
                     </svg>
                   </div>
                   
-                  {/* 2key Gateway Box */}
+                  {/* Earnfluence Gateway Box */}
                   <div className="flex-1 bg-teal/10 rounded px-2 py-1.5 border border-teal/30 text-center">
-                    <div className="text-[10px] font-bold text-teal-600 uppercase">2key Gateway</div>
+                    <div className="text-[10px] font-bold text-teal-600 uppercase">Earnfluence Gateway</div>
                   </div>
                   
                   {/* Arrow */}

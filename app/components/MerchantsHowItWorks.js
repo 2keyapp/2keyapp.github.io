@@ -4,7 +4,7 @@ export default function MerchantsHowItWorks() {
       id: 1,
       number: "1",
       title: "Connect your domain",
-      description: "Map your subdomain or custom domain to 2key's routing engine. We handle the hard stuff like SSL and DNS.",
+      description: "Map your subdomain or custom domain to Earnfluence's routing engine. We handle the hard stuff like SSL and DNS.",
       features: [
         "One-click domain mapping",
         "Maintain your full brand identity",
@@ -69,7 +69,7 @@ export default function MerchantsHowItWorks() {
       id: 3,
       number: "3",
       title: "Buyers checkout cleanly",
-      description: "Buyers see your brand interface and process their transaction. 2key stays completely invisible to the customer.",
+      description: "Buyers see your brand interface and process their transaction. Earnfluence stays completely invisible to the customer.",
       features: [
         { title: "White-labeled Checkout", subtitle: "Your brand colors, your domain" },
         { title: "One-click buying", subtitle: "Returning users checkout in seconds" },

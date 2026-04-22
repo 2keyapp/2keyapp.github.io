@@ -113,7 +113,7 @@ export default function WhoItsForSection() {
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="text-3xl sm:text-5xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight  tracking-tight">
-            Who is 2key for?
+            Who is Earnfluence for?
           </h2>
           <p className="text-xl sm:text-2xl md:text-2xl lg:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
             Whether you are building a product, growing an audience, or scaling a network, we provide the billing infrastructure you need.

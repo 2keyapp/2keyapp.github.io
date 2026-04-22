@@ -61,7 +61,7 @@ export default function SignUpPage() {
       <div className="fixed top-0 left-0 w-full p-4 sm:p-6 lg:p-8 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
           <span className="text-xl sm:text-2xl font-bold font-heading text-navy tracking-tight">
-            2Key<span className="text-teal">.app</span>
+            Earnfluence<span className="text-teal">.io</span>
           </span>
         </Link>
       </div>
@@ -71,7 +71,7 @@ export default function SignUpPage() {
         {!role ? (
           <div className="w-full max-w-4xl px-4 mt-6">
             <div className="text-center mb-10">
-              <h1 className="text-3xl sm:text-4xl font-bold font-heading text-navy mb-4">Join 2Key Network</h1>
+              <h1 className="text-3xl sm:text-4xl font-bold font-heading text-navy mb-4">Join Earnfluence Network</h1>
               <p className="text-gray-500 text-base sm:text-lg">Choose how you want to use the platform.</p>
             </div>
 
@@ -147,7 +147,7 @@ export default function SignUpPage() {
                      <h1 className="text-2xl font-bold font-heading text-navy tracking-tight">
                        {role === 'merchant' ? 'Create Merchant Account' : 'Create Influencer Account'}
                      </h1>
-                     <p className="text-gray-400 text-[13px] mt-1 font-medium">Join the 2Key Network today.</p>
+                     <p className="text-gray-400 text-[13px] mt-1 font-medium">Join the Earnfluence Network today.</p>
                    </div>
                 </div>
                 

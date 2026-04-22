@@ -24,7 +24,7 @@ export default function MerchantsHero() {
             
             {/* Description */}
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl">
-              2key never becomes your reseller. You stay the Merchant of Record — we just power the checkout, tracking, and attribution layer.
+              Earnfluence never becomes your reseller. You stay the Merchant of Record — we just power the checkout, tracking, and attribution layer.
             </p>
             
             {/* CTA Buttons */}

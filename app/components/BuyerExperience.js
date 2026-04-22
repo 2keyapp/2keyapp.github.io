@@ -2,7 +2,7 @@ export default function BuyerExperience() {
   const features = [
     {
       title: "Familiar checkout",
-      description: "Enjoy a consistent and intuitive payment interface across every 2key merchant.",
+      description: "Enjoy a consistent and intuitive payment interface across every Earnfluence merchant.",
       icon: (
         <svg
           className="w-6 h-6 text-teal"

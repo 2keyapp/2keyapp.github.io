@@ -40,7 +40,7 @@ export default function InfluencersHowItWorks() {
       id: 2,
       number: "2",
       title: "Share with your audience",
-      description: "Drop your links in your bio, stories, or descriptions. Buyers use your code at any 2key-supported merchant checkout.",
+      description: "Drop your links in your bio, stories, or descriptions. Buyers use your code at any Earnfluence-supported merchant checkout.",
       promoCode: "Use code TOPC20 for 20% off!",
       iconColor: "teal",
       visual: (
@@ -61,7 +61,7 @@ export default function InfluencersHowItWorks() {
                   Check out all my favorite products across 15+ merchants in one place!
                 </p>
                 <div className="px-4 py-2 bg-gray-100 rounded-lg overflow-hidden text-ellipsis whitespace-nowrap">
-                  <span className="text-teal font-medium text-sm">2key.app/t/topcreator</span>
+                  <span className="text-teal font-medium text-sm">earnfluence.io/t/topcreator</span>
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function InfluencersHowItWorks() {
       id: 4,
       number: "4",
       title: "Get paid instantly",
-      description: "No more waiting 60 days for payouts or chasing invoices. 2key splits the checkout funds and routes your commission instantly.",
+      description: "No more waiting 60 days for payouts or chasing invoices. Earnfluence splits the checkout funds and routes your commission instantly.",
       features: [
         { title: "Split Settlements", subtitle: "Your cut routes directly to your account at checkout" },
         { title: "No Minimum Thresholds", subtitle: "Access your money immediately" },

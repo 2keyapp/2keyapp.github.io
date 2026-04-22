@@ -35,7 +35,7 @@ export default function DashboardLayout({ children }) {
         <div className="h-full flex flex-col">
           <div className="h-16 flex items-center justify-between px-6">
             <span className="text-xl font-bold font-heading text-white">
-              2Key<span className="text-teal">.app</span>
+              Earnfluence<span className="text-teal">.io</span>
             </span>
             <button 
               className="lg:hidden p-2 -mr-2 text-gray-400 hover:text-white"
@@ -125,7 +125,7 @@ export default function DashboardLayout({ children }) {
         {/* Mobile Top Nav */}
         <header className="h-16 flex items-center justify-between px-4 sm:px-6 bg-white border-b border-gray-200 lg:hidden flex-shrink-0">
           <span className="text-xl font-bold font-heading text-navy">
-            2Key<span className="text-teal">.app</span>
+            Earnfluence<span className="text-teal">.io</span>
           </span>
           <button 
             className="p-2 -mr-2 text-gray-500 hover:text-navy transition-colors"

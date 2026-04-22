@@ -73,7 +73,7 @@ export default function MerchantOfRecordClarity() {
             
             {/* Title */}
             <h3 className="text-2xl sm:text-3xl font-heading font-bold text-white mb-6">
-              <span className="text-teal">2key</span>'s Role
+              <span className="text-teal">Earnfluence</span>'s Role
             </h3>
             
             {/* List with Icons */}

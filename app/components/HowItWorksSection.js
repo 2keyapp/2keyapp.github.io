@@ -4,7 +4,7 @@ export default function HowItWorksSection() {
       id: 1,
       number: "1",
       title: "Connect your domain in seconds",
-      description: "Merchants map their subdomains or custom domains directly to 2key. We handle the SSL, DNS, and routing so your brand remains front and center.",
+      description: "Merchants map their subdomains or custom domains directly to Earnfluence. We handle the SSL, DNS, and routing so your brand remains front and center.",
       features: [
         "One-click CNAME setup",
         "Automatic SSL certificate provisioning",
@@ -27,7 +27,7 @@ export default function HowItWorksSection() {
                 <svg className="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span>2key live routing</span>
+                <span>Earnfluence live routing</span>
               </div>
               <button className="w-full px-4 py-2 bg-teal text-white rounded-lg text-sm font-semibold hover:bg-teal/90 transition-colors">
                 Verify DNS Records
@@ -41,7 +41,7 @@ export default function HowItWorksSection() {
       id: 2,
       number: "2",
       title: "Influencers promote with style",
-      description: "Influencers get unique checkout links and visual promo codes. 2key tracks the code and attributes every purchase made using it to them.",
+      description: "Influencers get unique checkout links and visual promo codes. Earnfluence tracks the code and attributes every purchase made using it to them.",
       promoCode: "Use code CREATOR20 for 20% off!",
       iconColor: "orange",
       visual: (
@@ -71,42 +71,6 @@ Use code CREATOR20 to get 20% off your next purchase0
         </div>
       ),
     },
-    // {
-    //   id: 3,
-    //   number: "3",
-    //   title: "Authenticated once, shop everywhere",
-    //   description: "2key's SSO modal handles customer identity. Once a buyer logs in, they are recognized across every 2key-powered merchant store.",
-    //   features: [
-    //     { title: "Unified Customer Profile", subtitle: "shared shipping and billing info across merchants" },
-    //     { title: "Secure Password-less Login", subtitle: "email magic links or biometric login for frictionless checkout" },
-    //   ],
-    //   iconColor: "purple",
-    //   visual: (
-    //     <div className="bg-white rounded-xl border border-gray-200 shadow-lg p-6">
-    //       <div className="mb-4">
-    //         <h4 className="text-lg font-semibold text-gray-900 mb-4">Welcome to 2key SSO</h4>
-    //         <div className="space-y-3">
-    //           <input 
-    //             type="email" 
-    //             placeholder="Enter your email"
-    //             className="w-full px-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent"
-    //           />
-    //           <button className="w-full px-4 py-3 bg-teal text-white rounded-lg text-sm font-semibold hover:bg-teal/90 transition-colors">
-    //             Continue with Email
-    //           </button>
-    //           <div className="flex items-center gap-3">
-    //             <button className="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
-    //               Google
-    //             </button>
-    //             <button className="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
-    //               Apple
-    //             </button>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   ),
-    // },
     {
       id: 3,
       number: "3",
@@ -161,7 +125,7 @@ Use code CREATOR20 to get 20% off your next purchase0
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1h-4a1 1 0 01-1-1V5z" />
                     </svg>
                   </div>
-                  <span className="text-xs font-semibold text-gray-600">2KEY</span>
+                  <span className="text-xs font-semibold text-gray-600">EARNFLUENCE</span>
                 </div>
                 <div className="text-lg font-bold text-blue-600">$5.00</div>
               </div>

@@ -40,7 +40,7 @@ export default function LoginPage() {
       <div className="fixed top-0 left-0 w-full p-4 sm:p-6 lg:p-8 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
           <span className="text-xl sm:text-2xl font-bold font-heading text-navy tracking-tight">
-            2Key<span className="text-teal">.app</span>
+            Earnfluence<span className="text-teal">.io</span>
           </span>
         </Link>
       </div>

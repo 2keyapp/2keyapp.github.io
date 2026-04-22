@@ -21,7 +21,7 @@ export default function MerchantSettingsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
               <div>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-6">
-                  2Key connects directly to your Stripe account to automatically track successful orders, listen for refunds, and securely verify affiliate attributions without any manual data entry.
+                  Earnfluence connects directly to your Stripe account to automatically track successful orders, listen for refunds, and securely verify affiliate attributions without any manual data entry.
                 </p>
                 <div className="bg-gray-50 rounded-xl p-4 sm:p-5 border border-gray-100 inline-block w-full">
                   <div className="flex items-center justify-between">

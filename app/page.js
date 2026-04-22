@@ -1,7 +1,7 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
 import TrustBadges from './components/TrustBadges'
-import What2keyDoes from './components/What2keyDoes'
+import WhatEarnfluenceDoes from './components/WhatEarnfluenceDoes'
 import HowItWorksSection from './components/HowItWorksSection'
 import WhoItsForSection from './components/WhoItsForSection'
 import AudienceBentoGrid from './components/AudienceBentoGrid'
@@ -14,7 +14,7 @@ export default function Home() {
       <main className="min-h-screen bg-white">
         <Hero />
         <TrustBadges />
-        <What2keyDoes />
+        <WhatEarnfluenceDoes />
         <HowItWorksSection />
         <WhoItsForSection />
         <AudienceBentoGrid />

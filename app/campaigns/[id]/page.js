@@ -116,7 +116,7 @@ export default function CampaignDetailsPage({ params }) {
                     type="text"
                     readOnly
                     className="flex-1 w-full pl-12 sm:pl-16 pr-12 sm:pr-14 py-3 sm:py-4 border border-gray-200 rounded-xl bg-white text-navy font-mono text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-gray-200 font-medium"
-                    value="2key.link/sarah/technova"
+                    value="earnfluence.link/sarah/technova"
                   />
                   <div className="absolute inset-y-0 right-0 flex items-center pr-2">
                     <button className="p-2 sm:p-2.5 bg-gray-50 text-navy rounded-lg hover:bg-gray-100 border border-gray-200 transition-colors">

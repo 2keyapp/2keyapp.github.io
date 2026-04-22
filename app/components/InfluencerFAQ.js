@@ -21,7 +21,7 @@ export default function InfluencerFAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Everything you need to know about earning as an affiliate on 2key.
+            Everything you need to know about earning as an affiliate on Earnfluence.
           </p>
         </div>
 

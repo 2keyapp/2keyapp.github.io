@@ -1,12 +1,12 @@
 export default function MerchantFAQ() {
   const faqs = [
     {
-      question: "Does 2key act as the Merchant of Record?",
+      question: "Does Earnfluence act as the Merchant of Record?",
       answer: "No. You stay the merchant of record. Payments are processed through your Stripe or PayPal account."
     },
     {
       question: "Who appears on the customer’s statement?",
-      answer: "Your business name appears on the customer’s payment statement, not 2key."
+      answer: "Your business name appears on the customer’s payment statement, not Earnfluence."
     },
     {
       question: "How are affiliates tracked?",
@@ -18,11 +18,11 @@ export default function MerchantFAQ() {
     },
     {
       question: "Can I use my own Stripe or PayPal account?",
-      answer: "Yes. 2key works on top of your existing payment setup."
+      answer: "Yes. Earnfluence works on top of your existing payment setup."
     },
     {
-      question: "Does 2key handle customer funds?",
-      answer: "No. All payments go directly through Stripe or PayPal to your account. 2key only tracks and calculates affiliate commissions."
+      question: "Does Earnfluence handle customer funds?",
+      answer: "No. All payments go directly through Stripe or PayPal to your account. Earnfluence only tracks and calculates affiliate commissions."
     },
     {
       question: "How do I track which affiliate made a sale?",
@@ -30,7 +30,7 @@ export default function MerchantFAQ() {
     },
     {
       question: "Do I need to change my checkout or payment setup?",
-      answer: "No. 2key works with your existing Stripe or PayPal setup. You don’t need to rebuild your checkout."
+      answer: "No. Earnfluence works with your existing Stripe or PayPal setup. You don’t need to rebuild your checkout."
     }
   ]
 
@@ -45,7 +45,7 @@ export default function MerchantFAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Everything you need to know about working with 2key as a merchant.
+            Everything you need to know about working with Earnfluence as a merchant.
           </p>
         </div>
 
