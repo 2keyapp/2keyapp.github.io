@@ -37,18 +37,18 @@ export default function LoginPage() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full p-6 sm:p-8 z-50">
+      <div className="fixed top-0 left-0 w-full p-4 sm:p-6 lg:p-8 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
-          <span className="text-2xl font-bold font-heading text-navy tracking-tight">
+          <span className="text-xl sm:text-2xl font-bold font-heading text-navy tracking-tight">
             2Key<span className="text-teal">.app</span>
           </span>
         </Link>
       </div>
-      <main className="min-h-screen bg-gray-50 flex items-center justify-center py-20 font-body">
+      <main className="min-h-screen bg-gray-50 flex items-center justify-center py-12 sm:py-20 font-body">
         <div className="w-full max-w-md px-4">
-          <div className="bg-white rounded-[24px] border border-gray-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 sm:p-10">
-            <h1 className="text-3xl font-bold font-heading text-navy text-center mb-2">Welcome Back</h1>
-            <p className="text-gray-500 text-center text-sm mb-8">Enter your credentials to access your dashboard.</p>
+          <div className="bg-white rounded-[24px] border border-gray-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 sm:p-10">
+            <h1 className="text-2xl sm:text-3xl font-bold font-heading text-navy text-center mb-2">Welcome Back</h1>
+            <p className="text-gray-500 text-center text-xs sm:text-sm mb-8">Enter your credentials to access your dashboard.</p>
             
             <form className="space-y-5" onSubmit={handleSubmit}>
               <div>

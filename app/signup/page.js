@@ -58,27 +58,27 @@ export default function SignUpPage() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full p-6 sm:p-8 z-50">
+      <div className="fixed top-0 left-0 w-full p-4 sm:p-6 lg:p-8 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
-          <span className="text-2xl font-bold font-heading text-navy tracking-tight">
+          <span className="text-xl sm:text-2xl font-bold font-heading text-navy tracking-tight">
             2Key<span className="text-teal">.app</span>
           </span>
         </Link>
       </div>
-      <main className="min-h-screen bg-gray-50 flex items-center justify-center py-20 font-body">
+      <main className="min-h-screen bg-gray-50 flex items-center justify-center py-12 sm:py-20 font-body">
         
         {/* State 1: Choose Role */}
         {!role ? (
           <div className="w-full max-w-4xl px-4 mt-6">
             <div className="text-center mb-10">
-              <h1 className="text-4xl font-bold font-heading text-navy mb-4">Join 2Key Network</h1>
-              <p className="text-gray-500 text-lg">Choose how you want to use the platform.</p>
+              <h1 className="text-3xl sm:text-4xl font-bold font-heading text-navy mb-4">Join 2Key Network</h1>
+              <p className="text-gray-500 text-base sm:text-lg">Choose how you want to use the platform.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div 
                 onClick={() => { setRole('influencer'); setErrors({}) }}
-                className="bg-white rounded-[24px] border border-gray-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 sm:p-10 hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-all group flex flex-col justify-between h-full cursor-pointer relative overflow-hidden"
+                className="bg-white rounded-[24px] border border-gray-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 sm:p-10 hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-all group flex flex-col justify-between h-full cursor-pointer relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 p-8 opacity-[0.02] group-hover:scale-110 transition-transform">
                     <Users className="w-32 h-32 text-navy" />
@@ -97,7 +97,7 @@ export default function SignUpPage() {
 
               <div 
                 onClick={() => { setRole('merchant'); setErrors({}) }}
-                className="bg-white rounded-[24px] border border-gray-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 sm:p-10 hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-all group flex flex-col justify-between h-full cursor-pointer relative overflow-hidden"
+                className="bg-white rounded-[24px] border border-gray-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 sm:p-10 hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-all group flex flex-col justify-between h-full cursor-pointer relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 p-8 opacity-[0.02] group-hover:scale-110 transition-transform">
                     <Store className="w-32 h-32 text-navy" />
@@ -132,8 +132,8 @@ export default function SignUpPage() {
             
             <div className="bg-white rounded-[24px] border border-gray-100/50 shadow-[0_8px_40px_rgb(0,0,0,0.06)] overflow-hidden flex flex-col md:flex-row">
               {/* Left Column: Form */}
-              <div className="flex-1 p-8 sm:p-12 lg:p-16">
-                <div className="flex items-center mb-10">
+              <div className="flex-1 p-6 sm:p-12 lg:p-16">
+                <div className="flex items-center mb-8">
                    {role === 'merchant' ? (
                      <div className="w-12 h-12 rounded-full bg-navy/5 flex items-center justify-center mr-5">
                        <Store className="w-6 h-6 text-navy" />
