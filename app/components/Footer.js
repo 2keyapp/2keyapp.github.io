@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="bg-navy text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-8 sm:mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 mb-8 sm:mb-12 text-center sm:text-left">
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col items-center sm:items-start">
             <div className="flex items-center mb-4">
               <span className="text-teal text-2xl font-bold font-heading">2key</span>
               <span className="text-white/80 text-2xl font-bold font-heading">.app</span>
@@ -64,30 +64,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h3 className="text-white font-heading font-semibold text-base sm:text-lg mb-4 sm:mb-6">Resources</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/docs" className="text-gray-300 hover:text-teal transition-colors text-sm sm:text-base">
-                  Documentation
-                </Link>
-              </li>
-              <li>
-                <Link href="/api" className="text-gray-300 hover:text-teal transition-colors text-sm sm:text-base">
-                  API Reference
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-300 hover:text-teal transition-colors text-sm sm:text-base">
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </div>
-
           {/* Company */}
-          <div>
+          <div className="sm:col-span-2 lg:col-span-1">
             <h3 className="text-white font-heading font-semibold text-base sm:text-lg mb-4 sm:mb-6">Company</h3>
             <ul className="space-y-3">
               <li>
