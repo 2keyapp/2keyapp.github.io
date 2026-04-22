@@ -104,7 +104,7 @@ export default function Footer() {
                 Privacy Policy
               </Link>
               <Link
-                href="/terms"
+                href="/tos"
                 className="text-gray-300 hover:text-teal transition-colors text-sm sm:text-base"
               >
                 Terms of Service
