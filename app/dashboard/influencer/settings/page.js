@@ -2,24 +2,24 @@ import { ShieldCheck, ArrowRight, DollarSign, Wallet } from 'lucide-react'
 
 export default function InfluencerSettingsPage() {
   return (
-    <div className="p-8 max-w-5xl mx-auto font-body">
-      <div className="mb-10">
-        <h1 className="text-3xl font-bold font-heading text-navy tracking-tight">Payout Settings</h1>
-        <p className="text-gray-500 mt-2 text-sm">Connect your preferred payment destination to receive automated net-30 payouts.</p>
+    <div className="p-4 sm:p-6 lg:p-8 max-w-5xl mx-auto font-body">
+      <div className="mb-8 sm:mb-10">
+        <h1 className="text-2xl sm:text-3xl font-bold font-heading text-navy tracking-tight">Payout Settings</h1>
+        <p className="text-gray-500 mt-2 text-xs sm:text-sm">Connect your preferred payment destination to receive automated net-30 payouts.</p>
       </div>
 
       <div className="bg-white rounded-[24px] border border-gray-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
-        <div className="p-8 sm:p-10 border-b border-gray-100">
-          <h3 className="text-xl font-bold font-heading text-navy mb-3 flex items-center">
+        <div className="p-6 sm:p-10 border-b border-gray-100">
+          <h3 className="text-lg sm:text-xl font-bold font-heading text-navy mb-3 flex items-center">
             <Wallet className="w-5 h-5 mr-3 text-teal" />
             Payout Methods
           </h3>
-          <p className="text-sm text-gray-600 leading-relaxed max-w-2xl">
+          <p className="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-2xl">
             2Key supports fully automated routing to your bank via Stripe Connect, or direct balance transfers via PayPal. Select your preferred method below to start receiving your earned commissions.
           </p>
         </div>
 
-        <div className="p-8 sm:p-10 space-y-6">
+        <div className="p-6 sm:p-10 space-y-6">
           {/* Stripe Connect Option */}
           <div className="border border-gray-200 rounded-2xl p-6 hover:border-navy transition-colors group relative overflow-hidden">
             <div className="absolute top-0 right-0 p-6 opacity-[0.03] group-hover:scale-110 transition-transform">

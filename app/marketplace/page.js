@@ -80,22 +80,8 @@ export default function MarketplacePage() {
   })
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col font-body">
-      <header className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center">
-            <span className="text-xl font-bold font-heading text-navy">
-              2Key<span className="text-teal">.app</span>
-            </span>
-            <div className="hidden ml-10 flex space-x-8">
-              <span className="text-navy border-b-2 border-navy px-1 py-5 text-sm font-bold">Marketplace</span>
-              <Link href="/dashboard/influencer" className="border-transparent text-gray-500 hover:text-navy hover:border-gray-300 px-1 py-5 border-b-2 text-sm font-medium transition">My Dashboard</Link>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10">
+    <div className="font-body">
+      <main className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
           <div>
             <h1 className="text-4xl font-bold font-heading text-navy tracking-tight">Marketplace</h1>

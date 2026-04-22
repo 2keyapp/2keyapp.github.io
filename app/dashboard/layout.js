@@ -1,26 +1,48 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, Store, Users, Megaphone, Wallet, ArrowLeftRight, Settings, Compass } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { LayoutDashboard, Store, Users, Megaphone, Wallet, ArrowLeftRight, Settings, Compass, Menu, X } from 'lucide-react'
 
 export default function DashboardLayout({ children }) {
   const pathname = usePathname()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  // Close mobile menu when Route changes
+  useEffect(() => {
+    setMobileMenuOpen(false)
+  }, [pathname])
+  
   const isMerchant = pathname?.includes('/dashboard/merchant')
-  const isInfluencer = pathname?.includes('/dashboard/influencer')
+  const isInfluencer = pathname?.includes('/dashboard/influencer') || pathname?.includes('/marketplace') || pathname?.includes('/campaigns')
   
   // Logical rules to enforce strict separation in the UI mockups
+  const showInfluencer = isInfluencer
   const showMerchant = isMerchant || (!isMerchant && !isInfluencer)
-  const showInfluencer = isInfluencer && !isMerchant
 
   return (
-    <div className="flex h-screen bg-gray-100 text-navy font-body">
+    <div className="flex h-screen bg-gray-100 text-navy font-body overflow-hidden">
+      {/* Mobile Sidebar Overlay */}
+      {mobileMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-navy/50 backdrop-blur-sm z-40 lg:hidden"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
+
       {/* Sidebar */}
-      <aside className="w-64 bg-navy flex-shrink-0 shadow-[4px_0_24px_rgb(0,0,0,0.05)] z-10 relative">
+      <aside className={`fixed inset-y-0 left-0 w-64 bg-navy flex-shrink-0 shadow-[4px_0_24px_rgb(0,0,0,0.05)] z-50 transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="h-full flex flex-col">
-          <div className="h-16 flex items-center px-6">
+          <div className="h-16 flex items-center justify-between px-6">
             <span className="text-xl font-bold font-heading text-white">
               2Key<span className="text-teal">.app</span>
             </span>
+            <button 
+              className="lg:hidden p-2 -mr-2 text-gray-400 hover:text-white"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <X className="w-6 h-6" />
+            </button>
           </div>
           
           <nav className="flex-1 px-4 py-8 space-y-8 overflow-y-auto">
@@ -98,10 +120,26 @@ export default function DashboardLayout({ children }) {
         </div>
       </aside>
 
-      {/* Main Content */}
-      <main className="flex-1 overflow-y-auto w-full relative">
-        {children}
-      </main>
+      {/* Main Content Area */}
+      <div className="flex-1 flex flex-col min-w-0 h-screen">
+        {/* Mobile Top Nav */}
+        <header className="h-16 flex items-center justify-between px-4 sm:px-6 bg-white border-b border-gray-200 lg:hidden flex-shrink-0">
+          <span className="text-xl font-bold font-heading text-navy">
+            2Key<span className="text-teal">.app</span>
+          </span>
+          <button 
+            className="p-2 -mr-2 text-gray-500 hover:text-navy transition-colors"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <Menu className="w-6 h-6" />
+          </button>
+        </header>
+
+        {/* Dynamic Content */}
+        <main className="flex-1 overflow-y-auto w-full relative">
+          {children}
+        </main>
+      </div>
     </div>
   )
 }

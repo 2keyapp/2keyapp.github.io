@@ -32,20 +32,14 @@ export default function CampaignDetailsPage({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col font-body">
-      <header className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <div className="font-body">
+      <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+        <div className="mb-6">
           <Link href="/marketplace" className="inline-flex items-center text-sm font-bold text-gray-500 hover:text-navy transition-colors">
-            <ArrowLeft className="w-5 h-5 sm:w-4 sm:h-4 sm:mr-2" />
-            <span className="hidden sm:inline">Back to Marketplace</span>
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to Marketplace
           </Link>
-          <span className="text-lg sm:text-xl font-bold font-heading text-navy flex-shrink-0">
-            2Key<span className="text-teal">.app</span>
-          </span>
         </div>
-      </header>
-
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
         <div className="bg-white rounded-[24px] border border-gray-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
           <div className="p-6 sm:p-8 md:p-12 border-b border-gray-100">
             <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 sm:gap-8">
