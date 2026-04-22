@@ -29,23 +29,23 @@ export default function PromoCodesPage() {
   ]
 
   return (
-    <div className="p-8 max-w-7xl mx-auto font-body">
-      <div className="mb-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto font-body">
+      <div className="mb-8 sm:mb-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold font-heading text-navy tracking-tight">Promo Codes</h1>
-          <p className="text-gray-500 mt-2 text-sm">Manage discount codes used for offline or alternative attribution.</p>
+          <h1 className="text-2xl sm:text-3xl font-bold font-heading text-navy tracking-tight">Promo Codes</h1>
+          <p className="text-gray-500 mt-2 text-xs sm:text-sm">Manage discount codes used for offline or alternative attribution.</p>
         </div>
-        <button className="inline-flex items-center bg-navy hover:bg-navy/90 text-white font-bold py-2.5 px-5 rounded-full shadow-[0_8px_20px_rgb(10,25,47,0.2)] transition-all text-sm">
+        <button className="inline-flex items-center justify-center bg-navy hover:bg-navy/90 text-white font-bold py-2.5 px-5 rounded-full shadow-[0_8px_20px_rgb(10,25,47,0.2)] transition-all text-sm w-full sm:w-auto">
           <Plus className="w-4 h-4 mr-2" />
           Generate Code
         </button>
       </div>
 
       <div className="bg-white rounded-[24px] border border-gray-100/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden flex flex-col p-2">
-        <div className="px-6 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-50">
+        <div className="px-4 sm:px-6 py-4 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-50">
           <div className="relative w-full sm:w-72">
              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-             <input type="text" placeholder="Search codes or influencers..." className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-200 text-sm" />
+             <input type="text" placeholder="Search codes..." className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-200 text-sm" />
           </div>
         </div>
         
@@ -53,41 +53,29 @@ export default function PromoCodesPage() {
           <table className="w-full text-sm text-left align-middle">
             <thead className="text-gray-400 bg-gray-50/50">
               <tr>
-                <th className="px-6 py-4 font-medium text-[13px]">Code</th>
-                <th className="px-6 py-4 font-medium text-[13px]">Assigned To</th>
-                <th className="px-6 py-4 font-medium text-[13px]">Campaign</th>
-                <th className="px-6 py-4 font-medium text-[13px] text-right">Attributions</th>
-                <th className="px-6 py-4 font-medium text-[13px] text-right">Status</th>
+                <th className="px-4 sm:px-6 py-3 sm:py-4 font-medium text-[11px] sm:text-[13px]">Code</th>
+                <th className="px-4 sm:px-6 py-3 sm:py-4 font-medium text-[11px] sm:text-[13px]">Assigned</th>
+                <th className="px-4 sm:px-6 py-3 sm:py-4 font-medium text-[11px] sm:text-[13px]">Campaign</th>
+                <th className="px-4 sm:px-6 py-3 sm:py-4 font-medium text-[11px] sm:text-[13px] text-right">Uses</th>
               </tr>
             </thead>
             <tbody>
               {codes.map((item, i) => (
                 <tr key={i} className="hover:bg-gray-50/50 transition-colors border-b border-gray-50 last:border-0 group">
-                  <td className="px-6 py-4">
-                    <span className="font-mono font-bold text-navy bg-navy/5 border border-navy/10 px-3 py-1.5 rounded-lg text-xs tracking-wider">
+                  <td className="px-4 sm:px-6 py-3 sm:py-4">
+                    <span className="font-mono font-bold text-navy bg-navy/5 border border-navy/10 px-2 py-1.5 sm:px-3 sm:py-1.5 rounded-lg text-[10px] sm:text-xs tracking-wider">
                       {item.code}
                     </span>
                   </td>
-                  <td className="px-6 py-4">
-                    <p className="font-bold text-navy text-sm">{item.influencer}</p>
+                  <td className="px-4 sm:px-6 py-3 sm:py-4">
+                    <p className="font-bold text-navy text-xs sm:text-sm">{item.influencer}</p>
                   </td>
-                  <td className="px-6 py-4">
-                    <span className="font-medium text-gray-600 text-[13px]">{item.campaign}</span>
-                    <p className="text-xs text-gray-400 mt-0.5">{item.discount} discount</p>
+                  <td className="px-4 sm:px-6 py-3 sm:py-4">
+                    <p className="font-medium text-gray-600 text-[11px] sm:text-[13px] truncate max-w-[120px] sm:max-w-none">{item.campaign}</p>
+                    <p className="text-[10px] text-gray-400 mt-0.5">{item.discount}</p>
                   </td>
-                  <td className="px-6 py-4 text-right">
-                    <span className="font-bold text-teal">{item.attributions} uses</span>
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    {item.status === "Active" ? (
-                      <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-teal bg-teal/10 px-2 py-1 rounded-full">
-                        Active
-                      </span>
-                    ) : (
-                      <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-widest text-gray-400 bg-gray-100 px-2 py-1 rounded-full">
-                        Inactive
-                      </span>
-                    )}
+                  <td className="px-4 sm:px-6 py-3 sm:py-4 text-right">
+                    <span className="font-bold text-teal text-xs sm:text-sm">{item.attributions}</span>
                   </td>
                 </tr>
               ))}

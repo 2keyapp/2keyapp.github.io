@@ -3,68 +3,68 @@ import { DollarSign, Tremor, Target, ArrowUpRight, ArrowDownRight, RefreshCcw, A
 
 export default function MerchantDashboard() {
   return (
-    <div className="p-8 max-w-7xl mx-auto">
-      <div className="mb-10 flex items-center justify-between">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">
+      <div className="mb-8 sm:mb-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold font-heading text-navy tracking-tight">Overview</h1>
-          <p className="text-gray-500 mt-2 text-sm">Track your affiliate campaigns and commission payouts.</p>
+          <h1 className="text-2xl sm:text-3xl font-bold font-heading text-navy tracking-tight">Overview</h1>
+          <p className="text-gray-500 mt-2 text-xs sm:text-sm">Track your affiliate campaigns and commission payouts.</p>
         </div>
-        <Link href="/dashboard/merchant/campaigns/new" className="bg-navy text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-navy/90 transition-all shadow-[0_8px_20px_rgb(10,25,47,0.2)] w-full sm:w-auto text-center mt-4 sm:mt-0">
+        <Link href="/dashboard/merchant/campaigns/new" className="bg-navy text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-navy/90 transition-all shadow-[0_8px_20px_rgb(10,25,47,0.2)] w-full sm:w-auto text-center">
           + New Campaign
         </Link>
       </div>
 
       {/* KPI Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-        <div className="bg-white rounded-[24px] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-10">
+        <div className="bg-white rounded-[24px] p-5 sm:p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
           <div className="flex items-center justify-between mb-4">
-            <p className="text-[13px] font-semibold text-gray-500">Total Revenue</p>
+            <p className="text-[11px] sm:text-[13px] font-semibold text-gray-500">Total Revenue</p>
             <Activity className="w-5 h-5 text-gray-300" />
           </div>
-          <p className="text-4xl font-bold font-heading text-navy tracking-tight">$124.5k</p>
+          <p className="text-3xl sm:text-4xl font-bold font-heading text-navy tracking-tight">$124.5k</p>
           <div className="mt-4 flex items-center text-sm">
-            <span className="text-teal font-semibold flex items-center bg-teal/10 px-2.5 py-1 rounded-full text-xs">
+            <span className="text-teal font-semibold flex items-center bg-teal/10 px-2.5 py-1 rounded-full text-[10px] sm:text-xs">
               <ArrowUpRight className="w-3.5 h-3.5 mr-0.5" /> 12.5%
             </span>
-            <span className="text-gray-400 ml-3 text-xs font-medium">vs last month</span>
+            <span className="text-gray-400 ml-3 text-[10px] sm:text-xs font-medium">vs last month</span>
           </div>
         </div>
 
-        <div className="bg-white rounded-[24px] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
+        <div className="bg-white rounded-[24px] p-5 sm:p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
           <div className="flex items-center justify-between mb-4">
-            <p className="text-[13px] font-semibold text-gray-500">Pending Commissions</p>
+            <p className="text-[11px] sm:text-[13px] font-semibold text-gray-500">Pending Commissions</p>
             <RefreshCcw className="w-5 h-5 text-gray-300" />
           </div>
-          <p className="text-4xl font-bold font-heading text-navy tracking-tight">$4,230</p>
+          <p className="text-3xl sm:text-4xl font-bold font-heading text-navy tracking-tight">$4,230</p>
           <div className="mt-4 flex items-center text-sm">
-            <span className="text-gray-500 text-xs font-medium bg-gray-50 px-2.5 py-1 rounded-full">
+            <span className="text-gray-500 text-[10px] sm:text-xs font-medium bg-gray-50 px-2.5 py-1 rounded-full">
               Held in net-30
             </span>
           </div>
         </div>
 
-        <div className="bg-white rounded-[24px] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
+        <div className="bg-white rounded-[24px] p-5 sm:p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
           <div className="flex items-center justify-between mb-4">
-            <p className="text-[13px] font-semibold text-gray-500">Active Influencers</p>
+            <p className="text-[11px] sm:text-[13px] font-semibold text-gray-500">Active Influencers</p>
             <Target className="w-5 h-5 text-gray-300" />
           </div>
-          <p className="text-4xl font-bold font-heading text-navy tracking-tight">42</p>
+          <p className="text-3xl sm:text-4xl font-bold font-heading text-navy tracking-tight">42</p>
           <div className="mt-4 flex items-center text-sm">
-            <span className="text-teal font-semibold flex items-center bg-teal/10 px-2.5 py-1 rounded-full text-xs">
+            <span className="text-teal font-semibold flex items-center bg-teal/10 px-2.5 py-1 rounded-full text-[10px] sm:text-xs">
               <ArrowUpRight className="w-3.5 h-3.5 mr-0.5" /> 4 new
             </span>
-            <span className="text-gray-400 ml-3 text-xs font-medium">this week</span>
+            <span className="text-gray-400 ml-3 text-[10px] sm:text-xs font-medium">this week</span>
           </div>
         </div>
 
-        <div className="bg-white rounded-[24px] p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
+        <div className="bg-white rounded-[24px] p-5 sm:p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
           <div className="flex items-center justify-between mb-4">
-            <p className="text-[13px] font-semibold text-gray-500">Paid Commissions</p>
+            <p className="text-[11px] sm:text-[13px] font-semibold text-gray-500">Paid Commissions</p>
             <DollarSign className="w-5 h-5 text-gray-300" />
           </div>
-          <p className="text-4xl font-bold font-heading text-navy tracking-tight">$18.4k</p>
+          <p className="text-3xl sm:text-4xl font-bold font-heading text-navy tracking-tight">$18.4k</p>
           <div className="mt-4 flex items-center text-sm">
-            <span className="text-gray-500 text-xs font-medium bg-gray-50 px-2.5 py-1 rounded-full">
+            <span className="text-gray-500 text-[10px] sm:text-xs font-medium bg-gray-50 px-2.5 py-1 rounded-full">
               Lifetime payouts
             </span>
           </div>
