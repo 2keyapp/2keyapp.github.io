@@ -98,7 +98,7 @@ export default function Footer() {
             {/* Legal Links */}
             <div className="flex items-center gap-4 sm:gap-6">
               <Link
-                href="/privacy"
+                href="/privacy-policy"
                 className="text-gray-300 hover:text-teal transition-colors text-sm sm:text-base"
               >
                 Privacy Policy
