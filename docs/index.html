@@ -27,32 +27,52 @@
         <img src="assets/img/logo.svg" alt="" class="logo-mark" width="32" height="32">
         <span class="logo-wordmark">2key<span>.app</span></span>
       </a>
-      <div class="header-actions">
-        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <div class="nav-overlay" data-nav-close aria-hidden="true"></div>
+        <div id="nav-panel" class="nav-panel">
+          <ul class="nav-list">
+            <li class="nav-group">
+              <button type="button" class="nav-group-toggle" aria-expanded="false" aria-controls="nav-group-product">Product</button>
+              <ul id="nav-group-product" class="nav-group-links">
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#entitlements">License keys</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#lifecycle">Lifecycle</a></li>
+                <li><a href="#onboarding">Onboarding</a></li>
+                <li><a href="#sdks">SDKs</a></li>
+              </ul>
+            </li>
+            <li class="nav-group">
+              <button type="button" class="nav-group-toggle" aria-expanded="false" aria-controls="nav-group-platform">Platform</button>
+              <ul id="nav-group-platform" class="nav-group-links">
+                <li><a href="#taxes">Taxes</a></li>
+                <li><a href="#integration">Integration</a></li>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="#portals">Portals</a></li>
+                <li><a href="#admin">Admin</a></li>
+                <li><a href="#hosting">Hosting</a></li>
+                <li><a href="#security">Security</a></li>
+              </ul>
+            </li>
+            <li class="nav-group">
+              <button type="button" class="nav-group-toggle" aria-expanded="false" aria-controls="nav-group-partners">Partners</button>
+              <ul id="nav-group-partners" class="nav-group-links">
+                <li><a href="#earnfluence">Earnfluence</a></li>
+              </ul>
+            </li>
+            <li class="nav-item-direct"><a href="#pricing">Pricing</a></li>
+            <li class="nav-item-direct"><a href="#faq">FAQ</a></li>
+          </ul>
+          <div class="nav-drawer-footer">
+            <a class="btn btn-primary" href="#signup">Sign up</a>
+            <a class="nav-drawer-contact" href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-end">
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-panel">
           <span></span><span></span><span></span>
         </button>
-        <nav id="site-nav" class="site-nav" aria-label="Primary">
-          <ul>
-            <li><a href="#how-it-works">How it works</a></li>
-            <li><a href="#entitlements">License keys</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#taxes">Taxes</a></li>
-            <li><a href="#lifecycle">Lifecycle</a></li>
-            <li><a href="#onboarding">Onboarding</a></li>
-            <li><a href="#sdks">SDKs</a></li>
-            <li><a href="#integration">Integration</a></li>
-            <li><a href="#portals">Portals</a></li>
-            <li><a href="#admin">Admin</a></li>
-            <li><a href="#payments">Payments</a></li>
-            <li><a href="#security">Security</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#earnfluence">Earnfluence</a></li>
-            <li><a href="#hosting">Hosting</a></li>
-            <li><a href="#signup">Sign up</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
         <a class="btn btn-primary btn-sm header-cta" href="#signup">Sign up</a>
       </div>
     </div>
@@ -67,39 +87,77 @@
   <main id="main">
     <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <span class="hero-eyebrow">License keys and billing</span>
-          <h1>Sell subscriptions. Deliver license keys and activation.</h1>
+        <div class="hero-copy">
+          <span class="hero-eyebrow">Hosted billing for software vendors</span>
+          <h1>Get the license key. <span class="hero-h1-accent">Run the subscription.</span></h1>
           <p class="hero-lead">
-            <strong>2key</strong> means <em>to get</em> the license key—like classic software activation,
-            but for modern SaaS. 2key.app is hosted billing with seats, anniversary plans, storefronts
-            per merchant, and client SDKs that deliver entitlements to apps—starting with Flutter.
+            <strong>2key</strong> means <em>to get</em> the license key&mdash;classic software activation,
+            reimagined for modern SaaS. Seats, anniversary plans, storefronts per merchant, and client
+            SDKs that ship entitlements to apps online or offline.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#signup">Get started</a>
-            <a class="btn btn-secondary" href="#features">Explore features</a>
+            <a class="btn btn-primary btn-lg" href="#signup">Start for US$25</a>
+            <a class="btn btn-secondary btn-lg" href="#how-it-works">See how it works</a>
           </div>
+          <ul class="hero-stats" aria-label="Platform highlights">
+            <li>
+              <strong>1%</strong>
+              <span>of gross revenue<br>US$25/mo minimum</span>
+            </li>
+            <li>
+              <strong>Stripe + PayPal</strong>
+              <span>You keep the merchant<br>of record</span>
+            </li>
+            <li>
+              <strong>SDKs</strong>
+              <span>Online sync + offline<br>signed JWTs</span>
+            </li>
+          </ul>
         </div>
         <div class="hero-visual" aria-hidden="true">
+          <div class="hero-visual-header">
+            <span class="hero-visual-dot"></span>
+            <span class="hero-visual-dot"></span>
+            <span class="hero-visual-dot"></span>
+            <span class="hero-visual-label">acme.t.2key.app</span>
+          </div>
           <div class="flow-diagram">
             <div class="flow-row">
-              <div class="flow-box">
-                <strong>Paying party</strong>
-                <span>Company purchases seats</span>
+              <div class="flow-box flow-box-accent">
+                <span class="flow-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21V12h6v9"/></svg>
+                </span>
+                <div>
+                  <strong>Paying party</strong>
+                  <span>Acme Corp · 5 seats</span>
+                </div>
+              </div>
+            </div>
+            <div class="flow-row"><span class="flow-arrow" aria-hidden="true">↓</span></div>
+            <div class="flow-row flow-row-seats">
+              <div class="flow-box flow-box-sm">
+                <strong>Seat 1</strong>
+                <span>Active</span>
+              </div>
+              <div class="flow-box flow-box-sm">
+                <strong>Seat 2</strong>
+                <span>Active</span>
+              </div>
+              <div class="flow-box flow-box-sm flow-box-dim">
+                <strong>Seat 3</strong>
+                <span>Open</span>
               </div>
             </div>
             <div class="flow-row"><span class="flow-arrow" aria-hidden="true">↓</span></div>
             <div class="flow-row">
-              <div class="flow-box">
-                <strong>Seats</strong>
-                <span>Assignable subscriptions</span>
-              </div>
-            </div>
-            <div class="flow-row"><span class="flow-arrow" aria-hidden="true">↓</span></div>
-            <div class="flow-row">
-              <div class="flow-box">
-                <strong>Using parties</strong>
-                <span>Teams or individuals</span>
+              <div class="flow-box flow-box-accent">
+                <span class="flow-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </span>
+                <div>
+                  <strong>License key</strong>
+                  <span>Signed JWT · online or offline</span>
+                </div>
               </div>
             </div>
           </div>
@@ -107,13 +165,49 @@
       </div>
     </section>
 
+    <section class="use-cases" aria-label="Built for">
+      <div class="container">
+        <p class="use-cases-label">Built for software vendors who sell</p>
+        <ul class="use-case-list">
+          <li class="use-case">
+            <span class="use-case-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </span>
+            <div>
+              <strong>SaaS subscriptions</strong>
+              <span>Hosted apps with seats, plans, and recurring billing.</span>
+            </div>
+          </li>
+          <li class="use-case">
+            <span class="use-case-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </span>
+            <div>
+              <strong>Mobile &amp; desktop apps</strong>
+              <span>Flutter-first SDK delivers entitlements to client apps.</span>
+            </div>
+          </li>
+          <li class="use-case">
+            <span class="use-case-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </span>
+            <div>
+              <strong>Offline / air-gapped</strong>
+              <span>Signed JWTs activate apps without a network connection.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <section id="how-it-works" class="section">
       <div class="container">
         <header class="section-header">
-          <h2>How it works</h2>
+          <span class="section-eyebrow">How it works</span>
+          <h2>One paying party. Many using parties. Clean seats.</h2>
           <p>
-            Separate who pays from who uses. One organization can buy seats and assign
-            each seat to any using party—employees, customers, or departments.
+            Separate who pays from who uses. One organization buys seats and assigns
+            each one to any using party&mdash;employees, customers, or departments.
           </p>
         </header>
         <div class="card-grid card-grid-3">
@@ -154,14 +248,18 @@
     <section id="entitlements" class="section section-alt">
       <div class="container">
         <header class="section-header">
-          <h2>License keys and entitlements</h2>
+          <span class="section-eyebrow">License keys</span>
+          <h2>From purchase to working app, in one step.</h2>
           <p>
-            <strong>2key</strong> means to <em>get</em> the license key. After purchase, using parties receive
-            activation data your app understands—online from the billing server or offline via a signed JWT.
+            After payment, using parties get activation data your app understands&mdash;online
+            from the billing server, or offline via a signed JWT.
           </p>
         </header>
         <div class="card-grid card-grid-3">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
             <h3>From purchase to activation</h3>
             <p>
               A paying party buys seats; you assign using parties. Each seat ties subscription
@@ -169,6 +267,9 @@
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
             <h3>Online entitlements</h3>
             <p>
               Client SDKs and server APIs fetch current plans, features, and seat assignments
@@ -176,9 +277,12 @@
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
             <h3>Offline license keys</h3>
             <p>
-              Using parties copy a signed JWT from the merchant web portal into the app—ideal
+              Using parties copy a signed JWT from the merchant web portal into the app&mdash;ideal
               for air-gapped or intermittently connected environments. See <a href="#sdks">SDKs</a>.
             </p>
           </article>
@@ -189,10 +293,11 @@
     <section id="features" class="section">
       <div class="container">
         <header class="section-header">
-          <h2>Features</h2>
+          <span class="section-eyebrow">Features</span>
+          <h2>Everything you need to run subscriptions.</h2>
           <p>
             Subscription-first billing with flexible catalog structure and per-merchant
-            storefronts—plus one-time payments when you need them.
+            storefronts&mdash;plus one-time payments when you need them.
           </p>
         </header>
         <div class="card-grid card-grid-2">
@@ -253,22 +358,29 @@
     <section id="taxes" class="section section-alt">
       <div class="container">
         <header class="section-header">
-          <h2>Taxes</h2>
+          <span class="section-eyebrow">Taxes</span>
+          <h2>Tax done right on every invoice.</h2>
           <p>
-            2key billing calculates tax from merchant rules and customer billing addresses—at
-            checkout and on every recurring invoice—with a clear breakdown customers expect.
+            2key calculates tax from your rules and the customer's billing address&mdash;at
+            checkout and on every renewal&mdash;with a breakdown customers expect.
           </p>
         </header>
         <div class="card-grid card-grid-3">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
             <h3>Calculation and jurisdiction</h3>
             <p>
               Tax runs at checkout and on subscription renewals, one-time charges, and
-              prorations. Rates follow the paying party’s billing address and your configured
-              rules per jurisdiction.
+              prorations. Rates follow the paying party's billing address and your
+              configured rules per jurisdiction.
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
             <h3>Merchant tax settings</h3>
             <p>
               Define rates per region, choose tax-inclusive or tax-exclusive catalog pricing,
@@ -276,6 +388,9 @@
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6"/></svg>
+            </div>
             <h3>Invoices and compliance</h3>
             <p>
               Each invoice stores jurisdiction and rate snapshots so historical documents stay
@@ -340,28 +455,38 @@
     <section id="lifecycle" class="section">
       <div class="container">
         <header class="section-header">
-          <h2>Subscription lifecycle</h2>
+          <span class="section-eyebrow">Lifecycle</span>
+          <h2>Built for what happens after checkout.</h2>
           <p>
-            Recurring billing does not stop at the first payment. 2key manages renewals, plan
-            changes, and revenue growth motions through the subscription lifetime.
+            Recurring billing doesn't stop at the first payment. 2key manages renewals, plan
+            changes, and growth motions across the subscription lifetime.
           </p>
         </header>
         <div class="card-grid card-grid-2">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M20.49 15A9 9 0 0 1 5.64 18.36L1 14"/></svg>
+            </div>
             <h3>Renewals and plan changes</h3>
             <p>
-              Renewals on the paying party’s anniversary. New purchases are
+              Renewals on the paying party's anniversary. New purchases are
               <a href="#onboarding">prorated to that date</a>; upgrades and downgrades prorate mid-cycle.
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
+            </div>
             <h3>Upsell and cross-sell</h3>
             <p>
-              Offer add-ons and complementary plans at checkout or during the relationship—
+              Offer add-ons and complementary plans at checkout or during the relationship&mdash;
               orchestrated on 2key after Stripe or PayPal authorizes payment.
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M15 13l-3 3-2-2"/></svg>
+            </div>
             <h3>Credit notes</h3>
             <p>
               Adjustments and reversals reference original invoice and tax lines so finance
@@ -369,10 +494,13 @@
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+            </div>
             <h3>One-time and hybrid</h3>
             <p>
               Subscription-first, with support for one-time charges alongside recurring
-              seats—licenses, setup fees, or consumable add-ons.
+              seats&mdash;licenses, setup fees, or consumable add-ons.
             </p>
           </article>
         </div>
@@ -382,34 +510,44 @@
     <section id="onboarding" class="section section-alt">
       <div class="container">
         <header class="section-header">
-          <h2>Onboarding and anniversary alignment</h2>
+          <span class="section-eyebrow">Onboarding</span>
+          <h2>One anniversary per customer. No calendar chaos.</h2>
           <p>
             Each <strong>paying party</strong> has one anniversary date. New subscriptions and seats
-            join that same billing calendar—starting with a prorated charge, then full renewal
-            amounts on every anniversary afterward.
+            join the same calendar with a prorated first charge, then full amounts on every
+            anniversary afterward.
           </p>
         </header>
         <div class="card-grid card-grid-3">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            </div>
             <h3>One anniversary per paying party</h3>
             <p>
               A company (paying party) keeps a single anchor date for recurring billing across
-              its plans and seats—not a separate renewal date for every line item.
+              its plans and seats&mdash;not a separate renewal date for every line item.
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/></svg>
+            </div>
             <h3>Initial prorated charge</h3>
             <p>
-              When they buy mid-cycle—first plan, more seats, or an add-on—the first invoice
-              covers only the days until the next anniversary. Amounts are prorated fairly for
-              the partial period.
+              When they buy mid-cycle&mdash;first plan, more seats, or an add-on&mdash;the first
+              invoice covers only the days until the next anniversary. Amounts are prorated
+              fairly for the partial period.
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
             <h3>Full charges on anniversary</h3>
             <p>
               After alignment, each renewal (monthly or annual per plan) bills the
-              <strong>full</strong> subscription amount on the paying party’s anniversary date.
+              <strong>full</strong> subscription amount on the paying party's anniversary date.
             </p>
           </article>
         </div>
@@ -419,6 +557,9 @@ Each 15th thereafter — Full recurring charge on anniversary (monthly or annual
 Cancel mid-period — No refund for unused days; access per merchant policy until period ends</code></pre>
         <div class="card-grid card-grid-2">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+            </div>
             <h3>Cancellations</h3>
             <p>
               Cancelling a subscription or seat <strong>does not</strong> refund the unused portion
@@ -428,6 +569,9 @@ Cancel mid-period — No refund for unused days; access per merchant policy unti
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            </div>
             <h3>Why it matters</h3>
             <p>
               Finance teams get one renewal calendar per account. Engineering sees predictable
@@ -442,14 +586,18 @@ Cancel mid-period — No refund for unused days; access per merchant policy unti
     <section id="sdks" class="section">
       <div class="container">
         <header class="section-header">
-          <h2>Client SDKs</h2>
+          <span class="section-eyebrow">SDKs</span>
+          <h2>Drop entitlements into any app.</h2>
           <p>
-            SDKs for major client frameworks—starting with Flutter—deliver license keys and
-            activation data to client apps, online or offline.
+            SDKs for major client frameworks&mdash;starting with Flutter&mdash;deliver license
+            keys and activation data to client apps, online or offline.
           </p>
         </header>
         <div class="card-grid card-grid-2">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><path d="M12 20h.01"/></svg>
+            </div>
             <h3>Online sync</h3>
             <p>
               Connect client apps to 2key billing and synchronize subscription details while
@@ -457,6 +605,9 @@ Cancel mid-period — No refund for unused days; access per merchant policy unti
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+            </div>
             <h3>Offline sync via signed JWT</h3>
             <p>
               For disconnected environments, billing issues a signed JWT with subscription
@@ -477,22 +628,29 @@ portal → signed JWT → paste in app → SDK verify → local entitlements</co
     <section id="integration" class="section">
       <div class="container">
         <header class="section-header">
-          <h2>Integration</h2>
+          <span class="section-eyebrow">Integration</span>
+          <h2>One source of truth for entitlements.</h2>
           <p>
-            Connect your product to 2key.app billing so entitlements and subscriptions stay
-            authoritative on the platform while your software enforces access.
+            Connect your product to 2key.app billing so subscriptions stay authoritative on
+            the platform while your software enforces access.
           </p>
         </header>
         <div class="card-grid card-grid-2">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
             <h3>Hosted SaaS</h3>
             <p>
               If you deliver a hosted SaaS product, your backend can <strong>query 2key.app
-              billing</strong> for subscription data—seats, plans, paying and using parties,
-              and renewal state—so your app gates features and usage from a single source of truth.
+              billing</strong> for subscription data&mdash;seats, plans, paying and using parties,
+              and renewal state&mdash;so your app gates features and usage from a single source of truth.
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
             <h3>Client apps</h3>
             <p>
               If you ship an app (mobile, desktop, or embedded), the app can <strong>query the
@@ -509,7 +667,8 @@ Client app   →  SDK or API     →  billing server         →  entitlements</
     <section id="portals" class="section section-alt">
       <div class="container">
         <header class="section-header">
-          <h2>Portals</h2>
+          <span class="section-eyebrow">Portals</span>
+          <h2>Storefront for customers. Admin for you.</h2>
           <p>
             Merchants run their business in the admin portal; customers and using parties
             self-serve through storefronts and account areas.
@@ -517,14 +676,20 @@ Client app   →  SDK or API     →  billing server         →  entitlements</
         </header>
         <div class="card-grid card-grid-2">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
             <h3>Storefront and checkout</h3>
             <p>
               Shoppers browse your category tree, product pages, offerings, and monthly or
-              annual plans—then pay through your connected Stripe or PayPal on
+              annual plans&mdash;then pay through your connected Stripe or PayPal on
               <code>merchant.t.2key.app</code> or your CNAME. See <a href="#hosting">Hosting</a>.
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
             <h3>Customer self-service</h3>
             <p>
               Paying parties view invoices and subscriptions. Using parties obtain license
@@ -586,14 +751,18 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
     <section id="payments" class="section">
       <div class="container">
         <header class="section-header">
-          <h2>Payments</h2>
+          <span class="section-eyebrow">Payments</span>
+          <h2>Your gateways. Your money. Your customers.</h2>
           <p>
-            Stripe and PayPal as supported gateways. Collect payment on the gateway; 2key
-            billing orchestrates the rest of the revenue stack.
+            Stripe and PayPal as supported gateways. Collect on your accounts; 2key
+            orchestrates the rest of the revenue stack.
           </p>
         </header>
         <div class="card-grid card-grid-3">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            </div>
             <h3>Stripe</h3>
             <p>
               Payment intents on Stripe; 2key orchestrates recurring charges, upsell, and
@@ -602,6 +771,9 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 4H8l-3 16h4l1-5h6c4 0 6-2 6-6s-2-5-1-5z"/><path d="M9 13l1-7"/></svg>
+            </div>
             <h3>PayPal</h3>
             <p>
               Offer PayPal alongside card payments so merchants can reach buyers who prefer
@@ -609,6 +781,9 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"/><path d="M12 6v2m0 8v2"/></svg>
+            </div>
             <h3>Revenue orchestration</h3>
             <p>
               Focus on product and pricing; the platform manages subscription lifecycle and
@@ -623,7 +798,8 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
     <section id="earnfluence" class="section section-alt">
       <div class="container">
         <header class="section-header">
-          <h2>Earnfluence integration</h2>
+          <span class="section-eyebrow">Partners</span>
+          <h2>Bring affiliate marketing in.</h2>
           <p>
             Connect billing with affiliate and influencer marketing through Earnfluence.io.
           </p>
@@ -645,14 +821,18 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
     <section id="hosting" class="section">
       <div class="container">
         <header class="section-header">
-          <h2>Multi-tenant hosting</h2>
+          <span class="section-eyebrow">Hosting</span>
+          <h2>Multi-tenant. Your subdomain or your CNAME.</h2>
           <p>
-            Hosted SaaS on PostgreSQL and Node.js. Each request is routed by the Host header
-            to the correct merchant tenant.
+            Hosted SaaS on PostgreSQL and Node.js. Each request is routed by the
+            <code>Host</code> header to the correct merchant tenant.
           </p>
         </header>
         <div class="card-grid card-grid-2">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
             <h3>Default tenant URL</h3>
             <p>
               Merchants are served on tenant subdomains such as <code>merchant.t.2key.app</code>
@@ -663,10 +843,13 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
             </div>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
             <h3>Custom domain (CNAME)</h3>
             <p>
-              Point your own hostname at 2key—e.g. <code>billing.yourcompany.com</code>—and
-              serve checkout on your brand’s domain.
+              Point your own hostname at 2key&mdash;e.g. <code>billing.yourcompany.com</code>&mdash;and
+              serve checkout on your brand's domain.
             </p>
             <div class="host-examples">
               <span class="host-tag">billing.merchant.com</span>
@@ -679,14 +862,18 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
     <section id="security" class="section section-alt">
       <div class="container">
         <header class="section-header">
-          <h2>Security and trust</h2>
+          <span class="section-eyebrow">Security</span>
+          <h2>Clear boundaries. Sensible defaults.</h2>
           <p>
             Billing data deserves isolation, clear payment boundaries, and sensible operational
-            practices—without overclaiming certifications we do not hold yet.
+            practices&mdash;without overclaiming certifications we don't hold yet.
           </p>
         </header>
         <div class="card-grid card-grid-2">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
             <h3>Tenant isolation</h3>
             <p>
               Every HTTP request is routed by the <code>Host</code> header to a single merchant
@@ -694,6 +881,9 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
             <h3>Payment security</h3>
             <p>
               Card and PayPal checkout run on <strong>your</strong> connected Stripe and PayPal
@@ -702,6 +892,9 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            </div>
             <h3>Data protection</h3>
             <p>
               HTTPS for the marketing site and tenant endpoints. Reasonable technical and
@@ -709,6 +902,9 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
             </p>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+            </div>
             <h3>Your responsibilities</h3>
             <p>
               Secure your applications, API keys, and JWT distribution. End-customer refunds
@@ -723,19 +919,31 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
     <section id="pricing" class="section">
       <div class="container">
         <header class="section-header">
-          <h2>Pricing</h2>
+          <span class="section-eyebrow">Pricing</span>
+          <h2>Simple. Aligned with your revenue.</h2>
           <p>
-            Simple platform pricing aligned with your revenue. Sign up to start accepting
-            subscriptions through 2key.app billing.
+            One platform fee. No per-seat tax. Sign up to start accepting subscriptions
+            through 2key.app.
           </p>
         </header>
         <div class="pricing-layout">
           <div class="pricing-card">
+            <span class="pricing-badge">Launch pricing</span>
             <p class="pricing-rate" aria-label="1 percent of gross revenue">1%</p>
             <p class="pricing-rate-label">of gross revenue</p>
             <p class="pricing-tagline">
-              US$25 per month minimum · billed monthly only
+              US$25 per month minimum &middot; US$25 one-time setup
             </p>
+            <ul class="pricing-includes" aria-label="What's included">
+              <li>Unlimited products, offerings, and plans</li>
+              <li>Unlimited paying parties, using parties, and seats</li>
+              <li>Bring your own Stripe and PayPal accounts</li>
+              <li>Tax calculation with jurisdiction snapshots</li>
+              <li>Anniversary billing with automatic proration</li>
+              <li>Storefront, checkout, and customer portal</li>
+              <li>Client SDKs (Flutter first), online and offline</li>
+              <li>Custom domain via CNAME</li>
+            </ul>
             <div class="pricing-details">
               <article class="pricing-detail">
                 <h3>Monthly minimum</h3>
@@ -754,13 +962,13 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
               <article class="pricing-detail">
                 <h3>Monthly invoicing</h3>
                 <p>
-                  After setup, an invoice is raised on your monthly anniversary date each
-                  month for platform fees (1% of gross or the minimum, whichever is greater).
+                  After setup, an invoice is raised on your monthly anniversary date for
+                  platform fees (1% of gross or the minimum, whichever is greater).
                 </p>
               </article>
             </div>
             <div class="pricing-cta">
-              <a class="btn btn-primary" href="#signup">Sign up</a>
+              <a class="btn btn-primary btn-lg" href="#signup">Sign up &mdash; US$25</a>
               <p class="pricing-cta-note">
                 Questions? <a href="#contact">Contact us</a> or
                 <a href="mailto:hello@2key.app">hello@2key.app</a>
@@ -774,7 +982,8 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
     <section id="faq" class="section section-alt">
       <div class="container">
         <header class="section-header">
-          <h2>FAQ</h2>
+          <span class="section-eyebrow">FAQ</span>
+          <h2>Questions, answered.</h2>
           <p>Common questions from SaaS and app vendors evaluating 2key.app billing.</p>
         </header>
         <div class="faq-list">
@@ -839,8 +1048,9 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
     <section id="contact" class="contact-section">
       <div class="container">
         <header class="section-header contact-section-header">
-          <h2>Get started</h2>
-          <p>Sign up to launch your tenant or contact us with questions.</p>
+          <span class="section-eyebrow">Get started</span>
+          <h2>Launch your tenant today.</h2>
+          <p>Sign up to provision your storefront, or contact us with questions.</p>
         </header>
         <div class="contact-signup-grid">
           <div class="contact-block">
@@ -900,18 +1110,41 @@ Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans
         </ul>
       </div>
       <div class="footer-nav">
-        <ul class="footer-links">
-          <li><a href="#entitlements">License keys</a></li>
-          <li><a href="#lifecycle">Lifecycle</a></li>
-          <li><a href="#onboarding">Onboarding</a></li>
-          <li><a href="#admin">Admin</a></li>
-          <li><a href="#portals">Portals</a></li>
-          <li><a href="#security">Security</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#signup">Sign up</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3 class="footer-column-title">Product</h3>
+            <ul class="footer-links">
+              <li><a href="#how-it-works">How it works</a></li>
+              <li><a href="#entitlements">License keys</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#lifecycle">Lifecycle</a></li>
+              <li><a href="#onboarding">Onboarding</a></li>
+              <li><a href="#sdks">SDKs</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-column-title">Platform</h3>
+            <ul class="footer-links">
+              <li><a href="#taxes">Taxes</a></li>
+              <li><a href="#integration">Integration</a></li>
+              <li><a href="#payments">Payments</a></li>
+              <li><a href="#portals">Portals</a></li>
+              <li><a href="#admin">Admin</a></li>
+              <li><a href="#hosting">Hosting</a></li>
+              <li><a href="#security">Security</a></li>
+              <li><a href="#earnfluence">Earnfluence</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-column-title">Get started</h3>
+            <ul class="footer-links">
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#signup">Sign up</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
