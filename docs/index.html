@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2key.app — Get license keys. Subscription billing for software vendors.</title>
+  <meta name="description" content="To get license keys and activate software: hosted subscription billing, seats, entitlements, Stripe and PayPal, and client SDKs for SaaS and app vendors.">
+  <link rel="canonical" href="https://www.2key.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.2key.app/">
+  <meta property="og:title" content="2key.app — Get license keys. Subscription billing for software vendors.">
+  <meta property="og:description" content="The place to get license keys and run billing—subscriptions, seats, entitlements, and client SDKs for SaaS and app vendors.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0a0e17">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">
+        <img src="assets/img/logo.svg" alt="" class="logo-mark" width="32" height="32">
+        <span class="logo-wordmark">2key<span>.app</span></span>
+      </a>
+      <div class="header-actions">
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#entitlements">License keys</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#taxes">Taxes</a></li>
+            <li><a href="#lifecycle">Lifecycle</a></li>
+            <li><a href="#onboarding">Onboarding</a></li>
+            <li><a href="#sdks">SDKs</a></li>
+            <li><a href="#integration">Integration</a></li>
+            <li><a href="#portals">Portals</a></li>
+            <li><a href="#admin">Admin</a></li>
+            <li><a href="#payments">Payments</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#earnfluence">Earnfluence</a></li>
+            <li><a href="#hosting">Hosting</a></li>
+            <li><a href="#signup">Sign up</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-primary btn-sm header-cta" href="#signup">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="coming-soon-banner" role="status">
+    <div class="container coming-soon-banner-inner">
+      <p><strong>Coming soon</strong> — 2key.app billing is launching shortly. <a href="#contact">Contact us</a> for early access.</p>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-eyebrow">License keys and billing</span>
+          <h1>Sell subscriptions. Deliver license keys and activation.</h1>
+          <p class="hero-lead">
+            <strong>2key</strong> means <em>to get</em> the license key—like classic software activation,
+            but for modern SaaS. 2key.app is hosted billing with seats, anniversary plans, storefronts
+            per merchant, and client SDKs that deliver entitlements to apps—starting with Flutter.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#signup">Get started</a>
+            <a class="btn btn-secondary" href="#features">Explore features</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="flow-diagram">
+            <div class="flow-row">
+              <div class="flow-box">
+                <strong>Paying party</strong>
+                <span>Company purchases seats</span>
+              </div>
+            </div>
+            <div class="flow-row"><span class="flow-arrow" aria-hidden="true">↓</span></div>
+            <div class="flow-row">
+              <div class="flow-box">
+                <strong>Seats</strong>
+                <span>Assignable subscriptions</span>
+              </div>
+            </div>
+            <div class="flow-row"><span class="flow-arrow" aria-hidden="true">↓</span></div>
+            <div class="flow-row">
+              <div class="flow-box">
+                <strong>Using parties</strong>
+                <span>Teams or individuals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>How it works</h2>
+          <p>
+            Separate who pays from who uses. One organization can buy seats and assign
+            each seat to any using party—employees, customers, or departments.
+          </p>
+        </header>
+        <div class="card-grid card-grid-3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Paying vs using parties</h3>
+            <p>
+              A paying party (e.g. your customer’s company) subscribes once; many using
+              parties consume the product under that subscription.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3>Seat-based licensing</h3>
+            <p>
+              Subscriptions are purchased as seats. Reassign seats as teams change without
+              buying duplicate subscriptions.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            </div>
+            <h3>Anniversary billing</h3>
+            <p>
+              Each paying party has one anniversary date; monthly and annual plans renew on
+              that calendar. <a href="#onboarding">Onboarding and proration</a> explains new purchases.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="entitlements" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>License keys and entitlements</h2>
+          <p>
+            <strong>2key</strong> means to <em>get</em> the license key. After purchase, using parties receive
+            activation data your app understands—online from the billing server or offline via a signed JWT.
+          </p>
+        </header>
+        <div class="card-grid card-grid-3">
+          <article class="card">
+            <h3>From purchase to activation</h3>
+            <p>
+              A paying party buys seats; you assign using parties. Each seat ties subscription
+              state to someone who can run your software.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Online entitlements</h3>
+            <p>
+              Client SDKs and server APIs fetch current plans, features, and seat assignments
+              while the app is connected.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Offline license keys</h3>
+            <p>
+              Using parties copy a signed JWT from the merchant web portal into the app—ideal
+              for air-gapped or intermittently connected environments. See <a href="#sdks">SDKs</a>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Features</h2>
+          <p>
+            Subscription-first billing with flexible catalog structure and per-merchant
+            storefronts—plus one-time payments when you need them.
+          </p>
+        </header>
+        <div class="card-grid card-grid-2">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Offerings and plans</h3>
+            <p>
+              Products expose offerings; each offering has plans for tiers, intervals, and
+              packaging. Model complex SaaS pricing without custom code per SKU.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Categories and product pages</h3>
+            <p>
+              Hierarchical categories organize your catalog. A product can live in multiple
+              categories, each with its own category and product pages.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h3>Storefront and checkout</h3>
+            <p>
+              Every merchant gets a dedicated storefront and checkout flow on their tenant—
+              ready for your catalog and branding.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+            </div>
+            <h3>One-time and recurring</h3>
+            <p>
+              Built for subscriptions; supports one-time payments for add-ons, licenses, or
+              hybrid models.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h5"/></svg>
+            </div>
+            <h3>Tax handling</h3>
+            <p>
+              Calculate tax at checkout and on renewals; invoices show clear line items, tax
+              breakdown, and registration IDs. <a href="#taxes">Learn more</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="taxes" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Taxes</h2>
+          <p>
+            2key billing calculates tax from merchant rules and customer billing addresses—at
+            checkout and on every recurring invoice—with a clear breakdown customers expect.
+          </p>
+        </header>
+        <div class="card-grid card-grid-3">
+          <article class="card">
+            <h3>Calculation and jurisdiction</h3>
+            <p>
+              Tax runs at checkout and on subscription renewals, one-time charges, and
+              prorations. Rates follow the paying party’s billing address and your configured
+              rules per jurisdiction.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Merchant tax settings</h3>
+            <p>
+              Define rates per region, choose tax-inclusive or tax-exclusive catalog pricing,
+              and add tax registration IDs (VAT, GST, EIN, etc.) for invoice footers.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Invoices and compliance</h3>
+            <p>
+              Each invoice stores jurisdiction and rate snapshots so historical documents stay
+              explainable. Credit notes reference original tax lines on adjustments.
+            </p>
+          </article>
+        </div>
+        <figure class="invoice-preview-wrap" aria-label="Example customer invoice with tax breakdown">
+          <div class="invoice-preview">
+            <div class="invoice-preview-header">
+              <div>
+                <p class="invoice-preview-meta"><strong>Sold by</strong> Example SaaS Inc.<br>100 Market St, San Francisco, CA 94105</p>
+              </div>
+              <div>
+                <p class="invoice-preview-meta"><strong>Invoice</strong> INV-2026-0042<br><strong>Date</strong> 15 May 2026<br><strong>Currency</strong> USD</p>
+              </div>
+            </div>
+            <p class="invoice-preview-meta" style="margin-bottom: 1rem;"><strong>Bill to</strong> Acme Corp<br>500 Enterprise Blvd, Los Angeles, CA 90017, United States</p>
+            <table class="invoice-preview-table">
+              <thead>
+                <tr>
+                  <th scope="col">Description</th>
+                  <th scope="col" class="num">Qty</th>
+                  <th scope="col" class="num">Unit price</th>
+                  <th scope="col" class="num">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Pro plan — 5 seats (monthly)</td>
+                  <td class="num">5</td>
+                  <td class="num">$100.00</td>
+                  <td class="num">$500.00</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="invoice-total-row">
+                  <td colspan="3" class="num">Subtotal (ex. tax)</td>
+                  <td class="num">$500.00</td>
+                </tr>
+                <tr class="invoice-total-row">
+                  <td colspan="3" class="num">Sales tax (CA 8.25%) on $500.00</td>
+                  <td class="num">$41.25</td>
+                </tr>
+                <tr class="invoice-total-row">
+                  <td colspan="3" class="num">Total tax</td>
+                  <td class="num">$41.25</td>
+                </tr>
+                <tr class="invoice-total-row">
+                  <td colspan="3" class="num invoice-grand-total">Total due</td>
+                  <td class="num invoice-grand-total">$541.25</td>
+                </tr>
+              </tfoot>
+            </table>
+            <p class="invoice-preview-footer">Tax ID: US-XX-1234567 · Jurisdiction snapshot: California, US — 8.25% applied on 2026-05-15</p>
+          </div>
+          <p class="invoice-preview-caption">Illustrative example only; actual invoice layout and fields follow merchant configuration.</p>
+        </figure>
+      </div>
+    </section>
+
+    <section id="lifecycle" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Subscription lifecycle</h2>
+          <p>
+            Recurring billing does not stop at the first payment. 2key manages renewals, plan
+            changes, and revenue growth motions through the subscription lifetime.
+          </p>
+        </header>
+        <div class="card-grid card-grid-2">
+          <article class="card">
+            <h3>Renewals and plan changes</h3>
+            <p>
+              Renewals on the paying party’s anniversary. New purchases are
+              <a href="#onboarding">prorated to that date</a>; upgrades and downgrades prorate mid-cycle.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Upsell and cross-sell</h3>
+            <p>
+              Offer add-ons and complementary plans at checkout or during the relationship—
+              orchestrated on 2key after Stripe or PayPal authorizes payment.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Credit notes</h3>
+            <p>
+              Adjustments and reversals reference original invoice and tax lines so finance
+              teams can audit what changed. Details in <a href="#taxes">Taxes</a>.
+            </p>
+          </article>
+          <article class="card">
+            <h3>One-time and hybrid</h3>
+            <p>
+              Subscription-first, with support for one-time charges alongside recurring
+              seats—licenses, setup fees, or consumable add-ons.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="onboarding" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Onboarding and anniversary alignment</h2>
+          <p>
+            Each <strong>paying party</strong> has one anniversary date. New subscriptions and seats
+            join that same billing calendar—starting with a prorated charge, then full renewal
+            amounts on every anniversary afterward.
+          </p>
+        </header>
+        <div class="card-grid card-grid-3">
+          <article class="card">
+            <h3>One anniversary per paying party</h3>
+            <p>
+              A company (paying party) keeps a single anchor date for recurring billing across
+              its plans and seats—not a separate renewal date for every line item.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Initial prorated charge</h3>
+            <p>
+              When they buy mid-cycle—first plan, more seats, or an add-on—the first invoice
+              covers only the days until the next anniversary. Amounts are prorated fairly for
+              the partial period.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Full charges on anniversary</h3>
+            <p>
+              After alignment, each renewal (monthly or annual per plan) bills the
+              <strong>full</strong> subscription amount on the paying party’s anniversary date.
+            </p>
+          </article>
+        </div>
+        <pre class="code-block" aria-label="Onboarding billing timeline"><code>Day 0 — Paying party established; anniversary date set (e.g. 15th each month)
+Day 40 — New seats purchased → prorated invoice for days 40 → next 15th
+Each 15th thereafter — Full recurring charge on anniversary (monthly or annual plans)
+Cancel mid-period — No refund for unused days; access per merchant policy until period ends</code></pre>
+        <div class="card-grid card-grid-2">
+          <article class="card">
+            <h3>Cancellations</h3>
+            <p>
+              Cancelling a subscription or seat <strong>does not</strong> refund the unused portion
+              of the current billing period. Customers keep access according to your policy (for
+              example through the paid period end); 2key does not issue automatic credits for
+              remaining days before the anniversary.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Why it matters</h3>
+            <p>
+              Finance teams get one renewal calendar per account. Engineering sees predictable
+              anniversary charges after onboarding. See also <a href="#lifecycle">Subscription lifecycle</a>
+              and <a href="#taxes">Taxes</a> for prorations on invoices.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sdks" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Client SDKs</h2>
+          <p>
+            SDKs for major client frameworks—starting with Flutter—deliver license keys and
+            activation data to client apps, online or offline.
+          </p>
+        </header>
+        <div class="card-grid card-grid-2">
+          <article class="card">
+            <h3>Online sync</h3>
+            <p>
+              Connect client apps to 2key billing and synchronize subscription details while
+              online so entitlements stay current.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Offline sync via signed JWT</h3>
+            <p>
+              For disconnected environments, billing issues a signed JWT with subscription
+              details. Using parties copy it from the merchant web portal into the app.
+            </p>
+            <ol class="steps">
+              <li>Using party opens the merchant web portal</li>
+              <li>Billing provides a signed JWT for available subscriptions</li>
+              <li>User pastes the JWT into the client app; SDK validates and applies access</li>
+            </ol>
+          </article>
+        </div>
+        <pre class="code-block" aria-label="Example flow"><code>// Offline entitlement flow (conceptual)
+portal → signed JWT → paste in app → SDK verify → local entitlements</code></pre>
+      </div>
+    </section>
+
+    <section id="integration" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Integration</h2>
+          <p>
+            Connect your product to 2key.app billing so entitlements and subscriptions stay
+            authoritative on the platform while your software enforces access.
+          </p>
+        </header>
+        <div class="card-grid card-grid-2">
+          <article class="card">
+            <h3>Hosted SaaS</h3>
+            <p>
+              If you deliver a hosted SaaS product, your backend can <strong>query 2key.app
+              billing</strong> for subscription data—seats, plans, paying and using parties,
+              and renewal state—so your app gates features and usage from a single source of truth.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Client apps</h3>
+            <p>
+              If you ship an app (mobile, desktop, or embedded), the app can <strong>query the
+              billing server</strong> directly or through client SDKs. Use online sync when
+              connected, or signed JWT offline sync when users work without network access.
+            </p>
+          </article>
+        </div>
+        <pre class="code-block" aria-label="Integration patterns"><code>Hosted SaaS  →  your backend  →  2key.app billing API  →  subscription data
+Client app   →  SDK or API     →  billing server         →  entitlements</code></pre>
+      </div>
+    </section>
+
+    <section id="portals" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Portals</h2>
+          <p>
+            Merchants run their business in the admin portal; customers and using parties
+            self-serve through storefronts and account areas.
+          </p>
+        </header>
+        <div class="card-grid card-grid-2">
+          <article class="card">
+            <h3>Storefront and checkout</h3>
+            <p>
+              Shoppers browse your category tree, product pages, offerings, and monthly or
+              annual plans—then pay through your connected Stripe or PayPal on
+              <code>merchant.t.2key.app</code> or your CNAME. See <a href="#hosting">Hosting</a>.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Customer self-service</h3>
+            <p>
+              Paying parties view invoices and subscriptions. Using parties obtain license
+              keys or JWTs from the web portal for app activation.
+            </p>
+          </article>
+        </div>
+
+        <div id="admin" class="admin-panel">
+          <h3 class="admin-panel-title">Merchant admin</h3>
+          <p class="admin-panel-lead">
+            The admin portal is your control center: build the catalog buyers see, set prices
+            and billing intervals, connect payments, and run day-to-day subscription operations.
+          </p>
+          <div class="card-grid card-grid-2">
+            <article class="card">
+              <h4>Catalog and pricing</h4>
+              <ul class="admin-task-list">
+                <li>Create a <strong>hierarchical category tree</strong> (nested categories for navigation and SEO).</li>
+                <li>Add <strong>products</strong> and assign them to one or more categories.</li>
+                <li>Define <strong>offerings</strong> per product (e.g. tiers, bundles, or editions).</li>
+                <li>Add <strong>plans</strong> under each offering with price—<strong>monthly</strong>, <strong>annual</strong>, or other anniversary-aligned intervals.</li>
+                <li>Choose tax-inclusive or tax-exclusive catalog pricing.</li>
+                <li>Preview how category and product pages will appear on your storefront.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h4>Tax, payments, and tenant</h4>
+              <ul class="admin-task-list">
+                <li>Set <strong>tax rules</strong> and registration IDs by jurisdiction.</li>
+                <li>Connect your <strong>Stripe</strong> and <strong>PayPal</strong> accounts for customer checkout.</li>
+                <li>Set default <strong>currency</strong> and tenant URL (subdomain or <a href="#hosting">custom domain</a>).</li>
+                <li>Adjust storefront and checkout branding where supported.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h4>Customers and seats</h4>
+              <ul class="admin-task-list">
+                <li>View <strong>paying parties</strong> (who subscribes) and <strong>using parties</strong> (who uses the product).</li>
+                <li>Manage subscriptions, renewal dates, and plan changes.</li>
+                <li>Purchase and assign <strong>seats</strong>; reassign seats as teams change.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h4>Billing operations</h4>
+              <ul class="admin-task-list">
+                <li>Review <strong>invoices</strong>, payments, and credit notes.</li>
+                <li>Track revenue and subscription activity across your tenant.</li>
+                <li>Support <strong>upsell</strong>, <strong>cross-sell</strong>, and prorated plan changes—see <a href="#lifecycle">Subscription lifecycle</a>.</li>
+              </ul>
+            </article>
+          </div>
+          <pre class="code-block admin-hierarchy" aria-label="Catalog hierarchy example"><code>Category tree → Products → Offerings → Plans (monthly / annual)
+Example: Software → Pro Product → Cloud offering → $99/mo or $990/yr plans</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="payments" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Payments</h2>
+          <p>
+            Stripe and PayPal as supported gateways. Collect payment on the gateway; 2key
+            billing orchestrates the rest of the revenue stack.
+          </p>
+        </header>
+        <div class="card-grid card-grid-3">
+          <article class="card">
+            <h3>Stripe</h3>
+            <p>
+              Payment intents on Stripe; 2key orchestrates recurring charges, upsell, and
+              cross-sell after authorization. Tax handling is described in the
+              <a href="#taxes">Taxes</a> section.
+            </p>
+          </article>
+          <article class="card">
+            <h3>PayPal</h3>
+            <p>
+              Offer PayPal alongside card payments so merchants can reach buyers who prefer
+              PayPal checkout.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Revenue orchestration</h3>
+            <p>
+              Focus on product and pricing; the platform manages subscription lifecycle and
+              growth motions beyond the initial charge, including
+              <a href="#taxes">tax on invoices</a>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="earnfluence" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Earnfluence integration</h2>
+          <p>
+            Connect billing with affiliate and influencer marketing through Earnfluence.io.
+          </p>
+        </header>
+        <div class="integration-banner">
+          <div>
+            <h3>Offload marketing to affiliates</h3>
+            <p>
+              2key.app integrates with Earnfluence.io—a platform for influencers and marketing
+              agencies. Merchants can shift part or all of marketing to affiliate programs
+              managed on Earnfluence while subscriptions run on 2key billing.
+            </p>
+          </div>
+          <a class="btn btn-secondary" href="https://earnfluence.io" rel="noopener noreferrer">Learn about Earnfluence</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="hosting" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Multi-tenant hosting</h2>
+          <p>
+            Hosted SaaS on PostgreSQL and Node.js. Each request is routed by the Host header
+            to the correct merchant tenant.
+          </p>
+        </header>
+        <div class="card-grid card-grid-2">
+          <article class="card">
+            <h3>Default tenant URL</h3>
+            <p>
+              Merchants are served on tenant subdomains such as <code>merchant.t.2key.app</code>
+              with isolated catalog, checkout, and configuration.
+            </p>
+            <div class="host-examples">
+              <span class="host-tag">acme.t.2key.app</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Custom domain (CNAME)</h3>
+            <p>
+              Point your own hostname at 2key—e.g. <code>billing.yourcompany.com</code>—and
+              serve checkout on your brand’s domain.
+            </p>
+            <div class="host-examples">
+              <span class="host-tag">billing.merchant.com</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="security" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Security and trust</h2>
+          <p>
+            Billing data deserves isolation, clear payment boundaries, and sensible operational
+            practices—without overclaiming certifications we do not hold yet.
+          </p>
+        </header>
+        <div class="card-grid card-grid-2">
+          <article class="card">
+            <h3>Tenant isolation</h3>
+            <p>
+              Every HTTP request is routed by the <code>Host</code> header to a single merchant
+              tenant. Catalog, customers, and configuration do not leak across tenants.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Payment security</h3>
+            <p>
+              Card and PayPal checkout run on <strong>your</strong> connected Stripe and PayPal
+              accounts. Sensitive payment credentials stay with the gateways; 2key receives
+              limited confirmation metadata.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Data protection</h3>
+            <p>
+              HTTPS for the marketing site and tenant endpoints. Reasonable technical and
+              organizational measures; details in our <a href="privacy.html">Privacy Policy</a>.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Your responsibilities</h3>
+            <p>
+              Secure your applications, API keys, and JWT distribution. End-customer refunds
+              and chargebacks are handled between you and your customers per our
+              <a href="terms.html">Terms</a>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Pricing</h2>
+          <p>
+            Simple platform pricing aligned with your revenue. Sign up to start accepting
+            subscriptions through 2key.app billing.
+          </p>
+        </header>
+        <div class="pricing-layout">
+          <div class="pricing-card">
+            <p class="pricing-rate" aria-label="1 percent of gross revenue">1%</p>
+            <p class="pricing-rate-label">of gross revenue</p>
+            <p class="pricing-tagline">
+              US$25 per month minimum · billed monthly only
+            </p>
+            <div class="pricing-details">
+              <article class="pricing-detail">
+                <h3>Monthly minimum</h3>
+                <p>
+                  When 1% of your gross revenue for the month is below US$25, you pay the
+                  US$25 minimum instead.
+                </p>
+              </article>
+              <article class="pricing-detail">
+                <h3>Setup fee</h3>
+                <p>
+                  US$25 setup charge, paid upfront when you sign up, before your tenant is
+                  provisioned.
+                </p>
+              </article>
+              <article class="pricing-detail">
+                <h3>Monthly invoicing</h3>
+                <p>
+                  After setup, an invoice is raised on your monthly anniversary date each
+                  month for platform fees (1% of gross or the minimum, whichever is greater).
+                </p>
+              </article>
+            </div>
+            <div class="pricing-cta">
+              <a class="btn btn-primary" href="#signup">Sign up</a>
+              <p class="pricing-cta-note">
+                Questions? <a href="#contact">Contact us</a> or
+                <a href="mailto:hello@2key.app">hello@2key.app</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>FAQ</h2>
+          <p>Common questions from SaaS and app vendors evaluating 2key.app billing.</p>
+        </header>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Who is the merchant of record to my customers?</summary>
+            <div class="faq-answer">
+              <p>You are. Your customers buy from you on your storefront; 2key.app provides hosted billing infrastructure. You connect your own Stripe or PayPal for customer payments.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Can I use my own Stripe account?</summary>
+            <div class="faq-answer">
+              <p>Yes. Merchants connect their own Stripe (and PayPal) for charging end customers. The US$25 setup fee and platform fees (1% / $25 minimum) are paid to 2key.app separately—see <a href="#pricing">Pricing</a>.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>How does offline activation work?</summary>
+            <div class="faq-answer">
+              <p>Using parties sign in to your merchant web portal and receive a signed JWT with their entitlements. They paste it into your app; the SDK validates the signature locally. See <a href="#sdks">SDKs</a>.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Can I use my own domain for checkout?</summary>
+            <div class="faq-answer">
+              <p>Yes. CNAME a host such as <code>billing.yourcompany.com</code> to your 2key tenant. See <a href="#hosting">Multi-tenant hosting</a>.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>How does proration work when a customer buys mid-cycle?</summary>
+            <div class="faq-answer">
+              <p>Each paying party has one anniversary date. New plans or seats get an initial prorated charge through the next anniversary, then full recurring amounts on that date. See <a href="#onboarding">Onboarding and anniversary alignment</a>.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Do cancellations refund unused time?</summary>
+            <div class="faq-answer">
+              <p>No. Cancelling does not refund the unused portion of the current period. Access follows your cancellation policy (for example until the paid period ends).</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Do you support free trials?</summary>
+            <div class="faq-answer">
+              <p>Trial and freemium models are on our roadmap. Contact <a href="mailto:hello@2key.app">hello@2key.app</a> to discuss your use case during early access.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>What about failed payments and dunning?</summary>
+            <div class="faq-answer">
+              <p>Automated retry and dunning workflows are planned. Today, subscription state and invoicing are managed on the platform; contact us for current capabilities.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Is there an API or webhooks?</summary>
+            <div class="faq-answer">
+              <p>Hosted SaaS products can query billing for subscription data. Server-side webhooks for events are planned—see <a href="#integration">Integration</a> and reach out for early API access.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <header class="section-header contact-section-header">
+          <h2>Get started</h2>
+          <p>Sign up to launch your tenant or contact us with questions.</p>
+        </header>
+        <div class="contact-signup-grid">
+          <div class="contact-block">
+            <h3>Contact</h3>
+            <p>Hosted billing for your SaaS or app business. Reach out with questions or partnership inquiries.</p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:hello@2key.app">Contact us</a>
+              <a class="btn btn-secondary" href="#signup">Sign up</a>
+            </div>
+          </div>
+          <div id="signup" class="signup-block">
+            <h3>Sign up</h3>
+            <p class="signup-note">
+              US$25 setup fee is due now; monthly platform billing begins after your tenant is provisioned.
+              You will connect your own Stripe or PayPal for customer payments later—2key.app only collects
+              the platform setup fee here.
+            </p>
+            <form id="merchant-signup-form" class="signup-form" novalidate>
+              <div class="form-field">
+                <label for="business-name">Business name</label>
+                <input type="text" id="business-name" name="business_name" required autocomplete="organization" placeholder="Acme Inc.">
+              </div>
+              <div class="form-field">
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" name="email" required autocomplete="email" placeholder="you@company.com">
+              </div>
+              <div class="form-field">
+                <label for="contact-name">Contact name <span class="optional">(optional)</span></label>
+                <input type="text" id="contact-name" name="contact_name" autocomplete="name" placeholder="Jane Smith">
+              </div>
+            </form>
+            <div class="signup-pay">
+              <button type="button" class="btn btn-primary" id="pay-stripe" disabled>Pay US$25 with Stripe</button>
+              <button type="button" class="btn btn-secondary" id="pay-paypal" disabled>Pay US$25 with PayPal</button>
+              <p class="signup-pay-hint">Complete the form above, then pay the setup fee. You will be redirected to Stripe or PayPal checkout. By signing up you agree to our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="/">
+          <img src="assets/img/logo.svg" alt="" class="logo-mark" width="32" height="32">
+          <span class="logo-wordmark">2key<span>.app</span></span>
+        </a>
+        <p class="footer-tagline">To get license keys. Run subscription billing.</p>
+        <p class="footer-copy">© <span id="year"></span> 2key.app. All rights reserved.</p>
+        <ul class="footer-legal">
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+          <li><a href="acceptable-use.html">Acceptable use</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <ul class="footer-links">
+          <li><a href="#entitlements">License keys</a></li>
+          <li><a href="#lifecycle">Lifecycle</a></li>
+          <li><a href="#onboarding">Onboarding</a></li>
+          <li><a href="#admin">Admin</a></li>
+          <li><a href="#portals">Portals</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#signup">Sign up</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/signup.js"></script>
+</body>
+</html>
